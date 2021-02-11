@@ -39,19 +39,13 @@ p{
 
 }
 .projects {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
+    padding-top: 6rem;
+    columns: 2;
     column-gap: 1.25rem;
-    -webkit-column-break-inside: avoid;
-    -webkit-column-break-after: avoid;
-    -webkit-column-break-before: avoid;
-    -moz-column-break-inside: avoid;
-    orphans: 1;
-    widows: 1;
+    row-gap: 1.25rem;
+    -webkit-column-break-inside: avoid-column;
     .project{
+        display: flex;
         .thumb{
             max-width: 100%;
             margin-bottom: 1.125rem;

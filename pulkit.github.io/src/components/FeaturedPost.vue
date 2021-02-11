@@ -30,7 +30,7 @@
 export default {
   props: {
     projects: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
