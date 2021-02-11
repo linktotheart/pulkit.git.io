@@ -1,0 +1,61 @@
+@import './css/nes.css';
+@import 'css/mixin';
+@import 'css/layout';
+@import 'css/header';
+
+
+body{
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #123;
+}
+p{
+    color: #444;
+    margin-bottom: 1rem;
+}
+.wrapper{
+    padding-top: 75px;
+}
+
+///////////////// sections /////////////////// 
+.hero{
+    padding: 6rem 0 8rem;
+    text-align: left;
+    .container  {position: relative;}
+    .hero-title{
+        font-size: 2.6666rem;
+        margin-bottom: 2rem;
+    }
+    .social{
+        position: absolute;
+        bottom: -6rem;
+        left: 1rem;
+        a:not(:last-child){
+            margin-right: .5rem;
+        }
+    }
+
+}
+.projects {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    -webkit-column-break-inside: avoid;
+    -webkit-column-break-after: avoid;
+    -webkit-column-break-before: avoid;
+    -moz-column-break-inside: avoid;
+    orphans: 1;
+    widows: 1;
+    .project{
+        .thumb{
+            max-width: 100%;
+            margin-bottom: 1.125rem;
+        }
+    }
+  
+}

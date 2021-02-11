@@ -1,0 +1,31 @@
+.d-flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.mt-5{
+    margin-top: 3rem;
+}
+.mb-5{
+    margin-bottom: 3rem;
+}
+.pt-5{
+    padding-top: 3rem;
+}
+.pb-5{
+    padding-bottom: 3rem;
+}
+
+
+@mixin boxShadow($colour, $length){
+    $value: ();
+    @for $i from 1 through $length{
+      $px: $i + px;
+      $shadow: $px $px $colour;
+      $value: append($value, $shadow, comma)
+  
+    }
+    text-shadow: $value;
+  }
