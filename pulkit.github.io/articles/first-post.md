@@ -3,10 +3,8 @@ date: 2019-05-17
 title: About Typography
 author: Nichlas W. Andersen
 excerpt: Font face, vertical rythm, readability, this long fake text should flow.
-thumbnail: "/uploads/ian-dooley-281897-unsplash.jpg"
-categories:
-- photography
-- yellow
+thumbnail: "/uploads/photo-1550745165-9bc0b252726f.jpg"
+category: games
 ---
 
 ![](/uploads/markus-spiske-516263-unsplash.jpg)

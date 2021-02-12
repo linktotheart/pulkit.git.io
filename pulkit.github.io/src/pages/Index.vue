@@ -2,6 +2,9 @@
   <Layout>
     <Hero />
     <FeaturedPost :projects="$page.projects.edges" />
+    <LatestArticles :articles="$page.articles.edges" />
+    <!-- <CallToAction />
+    <Footer /> -->
   </Layout>
 </template>
 
@@ -18,6 +21,17 @@ query {
         path
       }
     }
+  },
+  articles: allArticles {
+    edges {
+      node {
+        id
+        title
+        thumbnail
+        category
+        path
+      }
+    }
   }
 }
 </page-query>
@@ -26,19 +40,18 @@ query {
 <script>
 import Hero from "@/components/Hero";
 import FeaturedPost from "@/components/FeaturedPost";
+import LatestArticles from "@/components/LatestArticles";
 export default {
   metaInfo: {
-    title: "Aloha Adios!",
+    title: "Welcome",
   },
   components: {
     Hero,
     FeaturedPost,
+    LatestArticles,
   },
 };
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 </style>

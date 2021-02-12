@@ -11,9 +11,11 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "eslint-plugin-gridsome": "^1.6.1",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
+    "@types/vuelidate": "^0.7.13",
     "node-sass": "^4.0.0",
     "sass-loader": "^7.3.1"
   }

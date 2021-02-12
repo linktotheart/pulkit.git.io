@@ -40,10 +40,12 @@ p{
 }
 .projects {
     padding-top: 6rem;
+    .projects-inner{
     columns: 2;
     column-gap: 1.25rem;
     row-gap: 1.25rem;
     -webkit-column-break-inside: avoid-column;
+    }
     .project{
         display: flex;
         .thumb{
@@ -52,4 +54,20 @@ p{
         }
     }
   
+}
+.articles{
+    padding: 5rem 0;
+    .articles-inner{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        .article{
+            flex: 0 0 50%;
+            padding: 1rem;
+
+            .block{display: block;}   
+            .thumb{max-height: 275px; overflow: hidden;}
+            .thumbnail{max-width: 100%;}
+        }
+    }
 }
