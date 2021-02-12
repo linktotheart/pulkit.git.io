@@ -34,6 +34,7 @@ query articles ($path: String!) {
     date (format: "D. MMMM YYYY")
     timeToRead
     content
+    path
   }
 }
 </page-query>
@@ -47,6 +48,7 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
+      
     };
   },
 };

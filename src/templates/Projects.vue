@@ -37,6 +37,7 @@ query projects ($path: String!) {
     date (format: "YYYY")
     content
     categories
+    path
   }
 }
 </page-query>

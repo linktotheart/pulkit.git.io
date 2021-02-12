@@ -1,7 +1,7 @@
 <template>
   <header class="main-header">
     <div class="container">
-      <a href="./" class="logo d-flex">
+      <a href="/" class="logo d-flex">
         <h3>Pulkit</h3>
       </a>
       <nav class="nav">
