@@ -2,13 +2,12 @@
   <Layout>
     <div class="article">
       <div class="container article-container">
+        <div class="thumbnail">
+          <g-image :Src="$page.post.thumbnail.src" :alt="$page.post.title" />
+        </div>
         <div class="article-header">
           <h1 v-html="$page.post.title" class="article-title" />
           <div class="article-meta">
-            <div class="article-author">
-              <span class="label">Author</span>
-              <span class="author-name" v-text="$page.post.author" />
-            </div>
             <div class="article-date">
               <span class="label">Date</span>
               <div v-text="$page.post.date" />
@@ -30,11 +29,11 @@
 query articles ($path: String!) {
   post: articles (path: $path) {
     title
-    author
-    date (format: "D. MMMM YYYY")
+    date (format: "DD, MMMM YY")
     timeToRead
     content
     path
+    thumbnail
   }
 }
 </page-query>
@@ -48,33 +47,10 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
-      
     };
   },
 };
 </script>
 
 <style scoped>
-.article-container {
-  max-width: 840px;
-}
-.article-header {
-  padding: 2rem 0 4rem 0;
-}
-.article-title {
-  font-size: 4rem;
-  margin: 0 0 4rem 0;
-  padding: 0;
-}
-.article-meta {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
-}
-.article-meta > div {
-  margin-right: 4rem;
-}
-.article-meta > div:last-of-type {
-  margin: 0;
-}
 </style>

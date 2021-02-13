@@ -2,29 +2,40 @@
   <Layout>
     <div class="project">
       <div class="container">
-        <div class="project-header">
-          <h1 class="project-title" v-html="$page.post.title" />
-          <div class="project-info">
-            <div class="categories-container">
-              <div class="categories">
-                <span class="label">Categories</span>
-                <span
-                  class="category"
-                  v-for="(category, index) in $page.post.categories"
-                  :key="index"
-                  v-text="category"
-                />
-              </div>
+        <div class="thumbnail">
+          <g-image :alt="$page.post.title" :src="$page.post.thumbnail.src" />
+        </div>
+        <div class="page-header">
+          <h1 class="project-title title" v-html="$page.post.title" />
+        </div>
+        <div class="project-info">
+          <div class="info-container d-flex">
+            <div class="categories">
+              <span class="label nes-text is-primary">Categories</span>
+              <span
+                class="category muted"
+                v-for="(category, index) in $page.post.categories"
+                :key="index"
+                v-text="category"
+              />
             </div>
-
-            <div class="year-container">
-              <span class="label">Year</span>
-              <div v-html="$page.post.date" />
+            <div class="date">
+              <span class="label mr-2">Posted</span>
+              <span class="muted" v-html="$page.post.date" />
             </div>
           </div>
         </div>
 
-        <div v-html="$page.post.content" class="content" />
+        <div
+          v-html="$page.post.content"
+          class="content project-inner mb-5 mt-5"
+        />
+
+        <g-link to="/work" class="nes-balloon from-left nes-pointer">
+          Liked? it <i class="nes-icon like mb-0"></i> <br />
+
+          See More
+        </g-link>
       </div>
     </div>
   </Layout>
@@ -34,8 +45,10 @@
 query projects ($path: String!) {
   post: projects (path: $path) {
     title
-    date (format: "YYYY")
+    date (format: "MMM YYYY")
     content
+    excerpt
+    thumbnail
     categories
     path
   }
@@ -47,35 +60,14 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
+      name: this.$page.post.excerpt,
     };
   },
 };
 </script>
 
 <style scoped>
-.project-header {
-  padding: 20vh 0 4rem 0;
-}
-.project-title {
-  font-size: 4rem;
-  margin: 0 0 4rem 0;
-  padding: 0;
-}
-.project-info {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
-}
-.project-info > div {
-  margin-right: 4rem;
-}
-.project-info > div:last-of-type {
-  margin: 0;
-}
-.category:after {
-  content: ", ";
-}
-.category:last-of-type:after {
-  content: "";
+.nes-balloon {
+  text-decoration: none;
 }
 </style>

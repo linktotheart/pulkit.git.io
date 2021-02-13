@@ -1,6 +1,8 @@
 <template>
   <div class="articles">
     <div class="container">
+      <h2 class="-section-title"><i class="nes-icon star"></i> Latest</h2>
+
       <div class="articles-inner">
         <div class="article" v-for="item in articles" :key="item.node.id">
           <g-link :to="item.node.path" class="block">

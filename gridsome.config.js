@@ -34,7 +34,7 @@ module.exports = {
           externalLinksRel: ["nofollow", "noopener", "noreferrer"]
         }
       }
-    }
+    },
   ],
   transformers: {
     remark: {

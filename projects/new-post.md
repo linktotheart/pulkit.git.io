@@ -7,3 +7,5 @@ categories:
 thumbnail: "/uploads/pixel.jpg"
 ---
 ![](/uploads/pixel.jpg)
+lorem ipdum
+##Hi this is test title

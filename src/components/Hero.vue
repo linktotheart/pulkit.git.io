@@ -10,6 +10,7 @@
           <g-link to="/about" class="nes-btn">learn More</g-link>
         </div>
         <div class="social mt-3">
+          <a href="#"> <i class="nes-icon facebook"></i> </a>
           <a href="#"> <i class="nes-icon github"></i> </a>
           <a href="#"> <i class="nes-icon twitter"></i> </a>
           <a href="#"> <i class="nes-icon linkedin"></i> </a>
