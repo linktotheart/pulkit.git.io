@@ -3,8 +3,7 @@
     <Hero />
     <FeaturedPost :projects="$page.projects.edges" />
     <LatestArticles :articles="$page.articles.edges" />
-    <!-- <CallToAction />
-    <Footer /> -->
+    <!-- <CallToAction /> -->
   </Layout>
 </template>
 
@@ -44,6 +43,7 @@ import LatestArticles from "@/components/LatestArticles";
 export default {
   metaInfo: {
     title: "Welcome",
+    content: "John Doe",
   },
   components: {
     Hero,

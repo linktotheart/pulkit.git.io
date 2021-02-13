@@ -2,7 +2,7 @@
   <header class="main-header">
     <div class="container">
       <a href="/" class="logo d-flex">
-        <h3>Pulkit</h3>
+        <h3 v-html="settings.header_title" />
       </a>
       <nav class="nav">
         <g-link to="/work" class="nav-link">Work</g-link>
@@ -15,7 +15,11 @@
 
 <script>
 export default {
-  name: "Header",
+  data() {
+    return {
+      settings: require("../../data/theme.json"),
+    };
+  },
 };
 </script>
 

@@ -1,6 +1,8 @@
 {
     "footer": "Copyright &copy; 2021",
+    "footer_title": "Wanna work together?",
     "dark_mode": false,
+    "header_title": "Gridsome",
     "site_name": "Pulkit's Journal",
     "site_description": "Creative technologist",
     "hero_title": "I've been expecting you!",

@@ -17,8 +17,13 @@ p{
 }
 .wrapper{
     padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
+main{
+    flex-grow: 1;
+}
 ///////////////// sections /////////////////// 
 .hero{
     padding: 6rem 0 8rem;
@@ -69,5 +74,33 @@ p{
             .thumb{max-height: 275px; overflow: hidden;}
             .thumbnail{max-width: 100%;}
         }
+    }
+}
+
+.main-footer{
+    padding: 3rem 0 .5rem;
+    background: #212529;
+    margin-top: 3rem;
+    .nes-container{
+        .title{
+            margin-top: -2.5rem;
+            font-size: 1.125rem;
+        }
+    }
+    .cont{
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        display: none;
+    }
+    .footer-lower{
+        color: #fff8;
+        position: absolute;
+        margin: 0;
+        z-index: 13;
+        background: #212529;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
