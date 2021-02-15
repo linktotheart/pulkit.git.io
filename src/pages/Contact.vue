@@ -3,11 +3,9 @@
     <div class="container">
       <div class="page-inner">
         <div class="page-header">
-          <h1 class="title">Contact</h1>
-          <p class="detail">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            nesciunt commodi earum impedit doloremque! Esse perspiciatis
-            voluptas explicabo suscipit tenetur! Consequatur, laboriosam iusto.
+          <h1 class="title mb-3">Contact</h1>
+          <p class="detail mb-0">
+            {{ settings.contact_text }}
           </p>
         </div>
 
@@ -137,6 +135,7 @@ export default {
   },
   data() {
     return {
+      settings: require("../../data/theme.json"),
       errors: [],
       name: "",
       email: "",
