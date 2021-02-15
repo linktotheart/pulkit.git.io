@@ -96,33 +96,28 @@
 </template>
 
 <script>
-import { required } from "vuelidate/lib/validators";
+import { Field, Form } from "vee-validate";
 
 export default {
   metaInfo: {
     title: "Contact",
   },
-  date: {
+  components: {
+    Field,
+    Form,
+  },
+  methods: {
+    isRequired(value) {
+      return value ? true : "This field is required";
+    },
+  },
+  data: {
     errors: [],
     name: null,
     email: null,
     message: null,
     subject: null,
     like: null,
-  },
-  methods: {
-    checkForm: function (e) {},
-  },
-  validations: {
-    name: {
-      required,
-    },
-    message: {
-      required,
-    },
-    subject: {
-      required,
-    },
   },
 };
 </script>
