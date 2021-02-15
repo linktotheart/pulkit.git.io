@@ -88,7 +88,7 @@ main{
 }
 
 .main-footer{
-    padding: 3rem 0 .5rem;
+    padding: 4rem 0 1.5rem;
     background: #212529;
     margin-top: 3rem;
     .nes-container{
@@ -96,12 +96,12 @@ main{
             margin-top: -2.5rem;
             font-size: 1.125rem;
         }
+        margin-bottom: 1rem;
     }
     .cont{
         justify-content: space-between;
         align-items: center;
         margin-bottom: 1.5rem;
-        display: none;
     }
     .footer-lower{
         color: #fff8;
@@ -114,4 +114,9 @@ main{
         left: 50%;
         transform: translateX(-50%);
     }
+}
+.contact-form{
+    max-width: 680px;
+    margin-bottom: 3rem;
+   
 }

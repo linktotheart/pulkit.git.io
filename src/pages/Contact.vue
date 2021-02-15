@@ -1,94 +1,124 @@
 <template>
   <Layout>
     <div class="container">
-      <div class="page-title">
-        <h1 class="title">Contact</h1>
-        <p class="detail">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-          nesciunt commodi earum impedit doloremque! Esse perspiciatis voluptas
-          explicabo suscipit tenetur! Consequatur, laboriosam iusto.
-        </p>
+      <div class="page-inner">
+        <div class="page-header">
+          <h1 class="title">Contact</h1>
+          <p class="detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+            nesciunt commodi earum impedit doloremque! Esse perspiciatis
+            voluptas explicabo suscipit tenetur! Consequatur, laboriosam iusto.
+          </p>
+        </div>
 
-        <div class="contact-form is-dark">
-          <div class="nes-container is-rounded" style="background: #fff">
-            <form netlify action="#" @submit="checkForm">
-              <div class="nes-field is-dark mb-3">
-                <label for="name_field">Your name</label>
-                <input
-                  v-model="name"
-                  type="text"
-                  id="name_field is-dark"
-                  class="nes-input"
-                  required
-                />
-              </div>
+        <div class="d-flex">
+          <div class="contact-form">
+            <div class="nes-container is-rounded mt-3" style="background: #fff">
+              <form action="#" @submit.prevent="handleForm">
+                <div class="nes-field is-dark mb-3">
+                  <label for="name_field">Your name</label>
+                  <input
+                    v-model="name"
+                    type="text"
+                    id="name_field is-dark"
+                    class="nes-input"
+                    :class="{ 'is-error': submitted && $v.name.$error }"
+                  />
+                  <small
+                    v-if="submitted && !$v.name.required"
+                    class="nes-text is-error"
+                    >Please Enter your name</small
+                  >
+                </div>
 
-              <div class="nes-field mb-3">
-                <label for="name_field">Your Email</label>
-                <input
-                  type="email"
-                  id="name_field is-dark"
-                  class="nes-input"
-                  required
-                  v-model="email"
-                />
-              </div>
+                <div class="nes-field mb-3">
+                  <label for="name_field">Your Email</label>
+                  <input
+                    type="email"
+                    id="name_field is-dark"
+                    class="nes-input"
+                    v-model="email"
+                    :class="{ 'is-error': submitted && $v.name.$error }"
+                  />
+                  <small
+                    v-if="submitted && !$v.email.required"
+                    class="nes-text is-error"
+                    >Please Enter your email</small
+                  >
+                  <small
+                    v-if="submitted && !$v.email.email"
+                    class="nes-text is-error"
+                    >Please Enter a valid email</small
+                  >
+                </div>
 
-              <label for="default_select">Subject</label>
-              <div class="nes-select mb-3">
-                <select required id="default_select" v-model="subject">
-                  <option value="" disabled selected hidden>Select...</option>
-                  <option value="Work together">Work together</option>
-                  <option value="Discuss a project">Discuss a project</option>
-                  <option value="Book appointment">Book appointment</option>
-                </select>
-              </div>
+                <label for="default_select">Subject</label>
+                <div
+                  class="nes-select mb-3"
+                  :class="{ 'is-error': submitted && $v.subject.$error }"
+                >
+                  <select id="default_select" v-model="subject">
+                    <option value="" disabled selected hidden>Select...</option>
+                    <option value="Work together">Work together</option>
+                    <option value="Discuss a project">Discuss a project</option>
+                    <option value="Book appointment">Book appointment</option>
+                  </select>
 
-              <div class="nes-field mb-3">
-                <label for="#message">Your Message here</label>
-                <textarea
-                  v-model="message"
-                  name="message"
-                  id="name-field"
-                  rows="4"
-                  class="nes-input"
-                ></textarea>
-              </div>
-              <div>
-                <p class="nes-text">
-                  Did you like this site? <br />
-                  <label class="mr-2 mt-2 mb-0">
-                    <input
-                      type="radio"
-                      class="nes-radio"
-                      name="answer"
-                      checked
-                      v-model="like"
-                    />
-                    <span>Yes</span>
-                  </label>
+                  <small
+                    v-if="submitted && !$v.message.required"
+                    class="nes-text is-error"
+                    >Please choose a subject</small
+                  >
+                </div>
 
-                  <label class="mb-0">
-                    <input
-                      type="radio"
-                      class="nes-radio"
-                      name="answer"
-                      v-model="like"
-                    />
-                    <span>No</span>
-                  </label>
+                <div class="nes-field mb-3">
+                  <label for="#message">Your Message here</label>
+                  <textarea
+                    v-model="message"
+                    name="message"
+                    id="name-field"
+                    rows="4"
+                    class="nes-input"
+                    :class="{ 'is-error': submitted && $v.message.$error }"
+                  ></textarea>
+                  <small
+                    v-if="submitted && !$v.message.required"
+                    class="nes-text is-error"
+                    >Please Enter your message</small
+                  >
+                </div>
+                <div>
+                  <p class="nes-text">
+                    Did you like this site? <br />
+                    <label class="mr-2 mt-2 mb-0">
+                      <input
+                        type="radio"
+                        class="nes-radio"
+                        name="answer"
+                        checked
+                      />
+                      <span>Yes</span>
+                    </label>
+
+                    <label class="mb-0">
+                      <input type="radio" class="nes-radio" name="answer" />
+                      <span>No</span>
+                    </label>
+                  </p>
+                </div>
+                <p class="nes-text is-disabled">
+                  <small
+                    >Your personal details will be completely secured.</small
+                  >
                 </p>
-              </div>
-              <p class="nes-text is-disabled">
-                <small>Your personal details will be completely secured.</small>
-              </p>
-              <button class="nes-btn is-primary" type="submit">
-                &nbsp; Send &nbsp;
-              </button>
-            </form>
-          </div>
+                <button class="nes-btn is-primary" type="submit">
+                  &nbsp; Send &nbsp;
+                </button>
+              </form>
+            </div>
 
-          <!-- ./form-->
+            <!-- ./form-->
+          </div>
         </div>
       </div>
     </div>
@@ -96,28 +126,41 @@
 </template>
 
 <script>
-import { Field, Form } from "vee-validate";
+import Vue from "vue";
+import Vuelidate from "vuelidate";
+import { required, email, minLength } from "vuelidate/lib/validators";
+
+Vue.use(Vuelidate);
 
 export default {
   metaInfo: {
     title: "Contact",
   },
-  components: {
-    Field,
-    Form,
+  data() {
+    return {
+      errors: [],
+      name: "",
+      email: "",
+      message: "",
+      subject: "",
+      submitted: false,
+    };
+  },
+  validations: {
+    name: { required, minLength: minLength(3) },
+    email: { required, email },
+    subject: { required },
+    message: { required },
   },
   methods: {
-    isRequired(value) {
-      return value ? true : "This field is required";
+    handleForm(e) {
+      (this.submitted = true),
+        /// stop here if form is invalid
+        this.$v.$touch();
+      if (this.$v.invalid) {
+        return;
+      }
     },
-  },
-  data: {
-    errors: [],
-    name: null,
-    email: null,
-    message: null,
-    subject: null,
-    like: null,
   },
 };
 </script>
