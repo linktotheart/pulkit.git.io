@@ -27,8 +27,8 @@
                   <small
                     v-if="submitted && !$v.name.required"
                     class="nes-text is-error"
-                    >Please Enter your name</small
-                  >
+                    >Please Enter your name
+                  </small>
                 </div>
 
                 <div class="nes-field mb-3">
@@ -116,7 +116,6 @@
                 </button>
               </form>
             </div>
-
             <!-- ./form-->
           </div>
         </div>
