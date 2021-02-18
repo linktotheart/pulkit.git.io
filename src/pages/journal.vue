@@ -10,7 +10,7 @@
           adipisci laboriosam corporis explicabo.
         </p>
 
-        <div class="inner">
+        <div class="inner articles-wrap">
           <div
             class="article"
             v-for="post in $page.posts.edges"

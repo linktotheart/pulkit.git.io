@@ -1,122 +1,138 @@
-@import './css/nes.css';
-@import 'css/mixin';
-@import 'css/layout';
-@import 'css/header';
+@import "./css/nes.css";
+@import "css/mixin";
+@import "css/layout";
+@import "css/header";
 
-
-body{
-    font-size: 16px;
-    font-family: 'Press Start 2P', cursive;
+body {
+  font-size: 16px;
+  font-family: "Press Start 2P", cursive;
 }
-h1,h2,h3,h4,h5,h6{
-    color: #123;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #123;
 }
-p{
-    color: #333;
-    margin-bottom: 1rem;
+p {
+  color: #333;
+  margin-bottom: 1rem;
 }
-.muted{
-    color: #777;
+.muted {
+  color: #777;
 }
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-.wrapper{
-    padding-top: 75px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.wrapper {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
-///////////////// sections /////////////////// 
-.hero{
-    padding: 6rem 0 8rem;
-    text-align: left;
-    .container  {position: relative;}
-    .hero-title{
-        font-size: 2.6666rem;
-        margin-bottom: 2rem;
+///////////////// sections ///////////////////
+.hero {
+  padding: 6rem 0 8rem;
+  text-align: left;
+  .container {
+    position: relative;
+  }
+  .hero-title {
+    font-size: 2.6666rem;
+    margin-bottom: 2rem;
+  }
+  .social {
+    position: absolute;
+    bottom: -6rem;
+    left: 1rem;
+    a:not(:last-child) {
+      margin-right: 0.5rem;
     }
-    .social{
-        position: absolute;
-        bottom: -6rem;
-        left: 1rem;
-        a:not(:last-child){
-            margin-right: .5rem;
-        }
-    }
-
+  }
 }
 .projects {
-    padding-top: 6rem;
-    .projects-inner{
+  padding-top: 6rem;
+  .projects-inner {
     columns: 2;
     column-gap: 1.25rem;
     row-gap: 1.25rem;
     -webkit-column-break-inside: avoid-column;
+  }
+  .project {
+    display: flex;
+    .thumb {
+      max-width: 100%;
+      margin-bottom: 1.125rem;
     }
-    .project{
-        display: flex;
-        .thumb{
-            max-width: 100%;
-            margin-bottom: 1.125rem;
-        }
-    }
-  
+  }
 }
-.articles{
-    padding: 5rem 0;
+.projects-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.articles {
+  padding: 5rem 0;
+  margin: 0;
+  .articles-inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 -1rem;
+    .article {
+      flex: 0 0 33.333333%;
+      padding: 1rem;
+
+      .block {
+        display: block;
+      }
+      .thumb {
+        max-height: 275px;
+        overflow: hidden;
+      }
+      .thumbnail {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.main-footer {
+  padding: 4rem 0 1.5rem;
+  background: #212529;
+  margin-top: 3rem;
+  .nes-container {
+    .title {
+      margin-top: -2.5rem;
+      font-size: 1.125rem;
+    }
+    margin-bottom: 1rem;
+  }
+  .cont {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .footer-lower {
+    color: #fff8;
+    position: absolute;
     margin: 0;
-    .articles-inner{
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        margin: 0 -1rem;
-        .article{
-            flex: 0 0 33.333333%;
-            padding: 1rem;
-
-            .block{display: block;}   
-            .thumb{max-height: 275px; overflow: hidden;}
-            .thumbnail{max-width: 100%;}
-        }
-    }
-}
-
-.main-footer{
-    padding: 4rem 0 1.5rem;
+    z-index: 13;
+    padding: 0.0125rem 0.5rem;
     background: #212529;
-    margin-top: 3rem;
-    .nes-container{
-        .title{
-            margin-top: -2.5rem;
-            font-size: 1.125rem;
-        }
-        margin-bottom: 1rem;
-    }
-    .cont{
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1.5rem;
-    }
-    .footer-lower{
-        color: #fff8;
-        position: absolute;
-        margin: 0;
-        z-index: 13;
-        padding: .0125rem .5rem;
-        background: #212529;
-        bottom: -8px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-.contact-form{
-    max-width: 680px;
-    margin-bottom: 3rem;
-   
+.contact-form {
+  max-width: 680px;
+  margin-bottom: 3rem;
 }
