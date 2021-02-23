@@ -1,12 +1,13 @@
 {
-    "footer": "Copyright &copy; 2021",
-    "footer_title": "Wanna work together?",
-    "dark_mode": false,
-    "header_title": "Gridsome",
-    "site_name": "Pulkit's Journal",
-    "site_description": "Creative technologist",
-    "hero_title": "I've been expecting you!",
-    "hero_subtitle": "Hi there, I'm an Frontend design &amp; Art Director focused on digital design for brands that like to have fun.",
-    "cta_title": "Don't be shy to Say Hi!",
-    "cta_body": "Get to know me? Buy me a coffee? Work together? I will be right here."
-  }
+  "footer": "Copyright &copy; 2021",
+  "footer_title": "Wanna work together?",
+  "dark_mode": false,
+  "header_title": "Gridsome",
+  "site_name": "Pulkit's Journal",
+  "site_description": "Creative technologist",
+  "hero_title": "I've been expecting you!",
+  "contact_text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nesciunt commodi earum impedit doloremque! Esse perspiciatis voluptas explicabo suscipit tenetur! Consequatur, laboriosam iusto",
+  "hero_subtitle": "Hi there, I'm an Frontend design &amp; Art Director focused on digital design for brands that like to have fun.",
+  "cta_title": "Don't be shy to Say Hi!",
+  "cta_body": "Get to know me? Buy me a coffee? Work together? I will be right here."
+}
