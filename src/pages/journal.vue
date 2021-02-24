@@ -24,7 +24,7 @@
               />
             </div>
             <g-link :to="post.node.path">
-              <h4 class="title" v-html="post.node.title" />
+              <h3 class="title" v-html="post.node.title" />
             </g-link>
             <p class="card-text" v-html="post.node.excerpt" />
             <p class="muted date">{{ post.node.date }}</p>
