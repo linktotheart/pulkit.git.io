@@ -21,7 +21,7 @@ sections:
 - type: heading
   label: Settings
 - type: document
-  path: theme.json
+  path: data/theme.json
   label: Site Setting
 upload_dir: uploads
 public_path: "/uploads"
