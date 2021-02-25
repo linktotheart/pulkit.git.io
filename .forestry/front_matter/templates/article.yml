@@ -10,15 +10,15 @@ fields:
 - type: text
   name: title
   label: title
+- type: file
+  name: thumbnail
+  label: Thumbnail
 - type: text
   name: author
   label: author
 - type: text
   name: excerpt
   label: excerpt
-- type: file
-  name: thumbnail
-  label: thumbnail
 - type: text
   name: category
   label: category
