@@ -11,24 +11,23 @@ sections:
   label: Projects
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: articles
   label: Articles
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: heading
   label: Settings
 - type: document
   path: theme.json
   label: Site Setting
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: ":filename::year::month:"
 build:
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
