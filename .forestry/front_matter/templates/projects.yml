@@ -26,3 +26,5 @@ fields:
     schema:
       format: html-blocks
   label: Description
+pages:
+- projects/lal-lal-chunri-sitaron-wali.md
