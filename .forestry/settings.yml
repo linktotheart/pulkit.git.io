@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Add new
 - type: directory
   path: projects
   label: Projects
@@ -16,6 +18,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: ".md"
+- type: heading
+  label: Settings
 - type: document
   path: theme.json
   label: Site Setting
