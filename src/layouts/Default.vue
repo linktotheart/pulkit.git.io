@@ -1,9 +1,11 @@
 <template>
   <div class="wrapper">
     <Header />
-    <main>
-      <slot />
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <slot />
+      </main>
+    </transition>
     <!--footer-->
     <Footer />
   </div>
@@ -27,3 +29,14 @@ export default {
   },
 };
 </script>
+
+<style>
+.fade-enter-active {
+  transition: all 0.5s ease;
+}
+
+.fade-enter {
+  transform: scale(0.95);
+  opacity: 0;
+}
+</style>
