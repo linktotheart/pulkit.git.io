@@ -103,7 +103,12 @@ main {
     }
   }
 }
-
+///////// articles pAge
+.articles-wrap{
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .main-footer {
   padding: 4rem 0 1.5rem;
   background: #212529;

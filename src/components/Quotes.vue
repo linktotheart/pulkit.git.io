@@ -13,7 +13,7 @@
         <section class="message -right">
           <!-- Balloon -->
           <div class="nes-balloon from-right">
-            <p>{{ quotes.quote[Math.floor(Math.random() * quotes.length)] }}</p>
+            <p> {{ quotes.quote[0] }} </p>
           </div>
           <i class="nes-kirby"></i>
         </section>
@@ -27,8 +27,12 @@ export default {
   data() {
     return {
       quotes: require("../../quotes/quote.json"),
+      
     };
   },
+  methods: {
+    
+  }
 };
 </script>
 
