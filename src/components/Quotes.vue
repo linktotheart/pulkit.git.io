@@ -13,7 +13,7 @@
         <section class="message -right">
           <!-- Balloon -->
           <div class="nes-balloon from-right">
-            <p>{{ quotes.quote[0] }}</p>
+            <p>{{ quotes.quote[Math.floor(Math.random() * quote.length)] }}</p>
           </div>
           <i class="nes-kirby"></i>
         </section>
