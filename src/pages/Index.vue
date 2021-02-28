@@ -3,33 +3,31 @@
     <Hero />
     <FeaturedPost :projects="$page.projects.edges" />
     <LatestArticles :articles="$page.articles.edges" />
-    <Quotes />
     <!-- <CallToAction /> -->
   </Layout>
 </template>
 
 <page-query>
 query {
-  projects: allProjects {
+  projects: allProjects (limit: 5) {
     edges{
       node{
         id
         title
-        thumbnail
-        date (format: "YYYY")
         thumbnail 
         path
       }
     }
   },
-  articles: allArticles {
+  articles: allArticles (limit: 3){
     edges {
       node {
         id
         title
         thumbnail
-        category
+        date (format: "DD MMM YYYY")
         path
+        timeToRead
       }
     }
   }
@@ -41,7 +39,6 @@ query {
 import Hero from "@/components/Hero";
 import FeaturedPost from "@/components/FeaturedPost";
 import LatestArticles from "@/components/LatestArticles";
-import Quotes from "@/components/Quotes";
 export default {
   metaInfo: {
     title: "Welcome",
@@ -51,10 +48,8 @@ export default {
     Hero,
     FeaturedPost,
     LatestArticles,
-    Quotes,
   },
 };
-Quotes;
 </script>
 
 <style>

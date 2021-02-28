@@ -7,7 +7,7 @@
         <p class="sub-title nes-text" v-html="settings.hero_subtitle" />
         <div class="btn-group mt-3">
           <g-link class="nes-btn is-primary mr-3" to="/contact">Say Hi</g-link>
-          <g-link to="/about" class="nes-btn">learn More</g-link>
+          <g-link to="/about" class="nes-btn">Learn More</g-link>
         </div>
         <div class="social mt-3">
           <a href="#"> <i class="nes-icon facebook"></i> </a>
@@ -30,15 +30,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.mb-3 {
-  margin-bottom: 20px;
-}
-.mt-3 {
-  margin-top: 30px;
-}
-.mr-3 {
-  margin-right: 1rem;
-}
-</style>

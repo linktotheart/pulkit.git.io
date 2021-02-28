@@ -10,24 +10,28 @@
           adipisci laboriosam corporis explicabo.
         </p>
 
-        <div class="inner articles-wrap">
-          <div
-            class="article"
-            v-for="post in $page.posts.edges"
-            :key="post.node.id"
-          >
-            <div class="thumbnail">
-              <g-image
-                class="thum"
-                :src="post.node.thumbnail.src"
-                :alt="post.node.title"
-              />
+        <div class="articles">
+          <div class="grid">
+            <div
+              class="grid-item-3"
+              v-for="post in $page.posts.edges"
+              :key="post.node.id"
+            >
+              <div class="article mb-3">
+                <div class="thumbnail">
+                  <g-image
+                    class="thum"
+                    :src="post.node.thumbnail.src"
+                    :alt="post.node.title"
+                  />
+                </div>
+                <g-link :to="post.node.path">
+                  <h3 class="title" v-html="post.node.title" />
+                </g-link>
+                <p class="card-text" v-html="post.node.excerpt" />
+                <p class="muted date">{{ post.node.date }}</p>
+              </div>
             </div>
-            <g-link :to="post.node.path">
-              <h3 class="title" v-html="post.node.title" />
-            </g-link>
-            <p class="card-text" v-html="post.node.excerpt" />
-            <p class="muted date">{{ post.node.date }}</p>
           </div>
         </div>
       </div>

@@ -3,6 +3,10 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    &.container-sm{
+        max-width: 768px;
+    }
 }
 .page-header{
     padding: 3rem 0;
@@ -31,9 +35,8 @@ p.lead{
 .date{
     float: right;
 }
-.info-container{
-    justify-content: space-between;
-}
+
+
 .project-inner{
     max-width: 990px;
     margin: 2rem auto;
@@ -42,6 +45,7 @@ p.lead{
         margin-bottom: 1rem;
     }
 }
+
 .project{
     .thumbnail{
         aspect-ratio: 16 / 9;

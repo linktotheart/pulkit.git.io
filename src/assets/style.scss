@@ -1,8 +1,14 @@
 @import "./css/nes.css";
 @import "css/mixin";
 @import "css/layout";
+@import "css/grid";
 @import "css/header";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   font-family: "Press Start 2P", cursive;
@@ -17,7 +23,7 @@ h6 {
 }
 p {
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .muted {
   color: #777;
