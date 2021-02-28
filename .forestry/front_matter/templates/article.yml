@@ -1,0 +1,46 @@
+---
+label: Article
+hide_body: true
+display_field: title
+fields:
+- type: datetime
+  name: date
+  label: date
+  default: now
+- type: text
+  name: title
+  label: title
+- type: file
+  name: thumbnail
+  label: Thumbnail
+- type: text
+  name: author
+  label: author
+- type: text
+  name: excerpt
+  label: excerpt
+- type: text
+  name: category
+  label: category
+- name: columns
+  type: field_group_list
+  fields:
+  - name: column
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: column
+  - name: col-img
+    type: file
+    config:
+      maxSize: 64
+    label: col-img
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: columns
