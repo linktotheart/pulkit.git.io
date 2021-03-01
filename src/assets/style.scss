@@ -4,7 +4,7 @@
 @import "css/grid";
 @import "css/header";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -64,24 +64,14 @@ main {
 }
 .projects {
   padding-top: 6rem;
-  .projects-inner {
-    columns: 2;
-    column-gap: 1.25rem;
-    row-gap: 1.25rem;
-    -webkit-column-break-inside: avoid-column;
-  }
+
   .project {
     display: flex;
-    .thumb {
+    .thumbnail {
       max-width: 100%;
       margin-bottom: 1.125rem;
     }
   }
-}
-.projects-wrap {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
 }
 
 .articles {
@@ -110,11 +100,12 @@ main {
   }
 }
 ///////// articles pAge
-.articles-wrap{
+.articles-wrap {
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .main-footer {
   padding: 4rem 0 1.5rem;
   background: #212529;
