@@ -15,7 +15,9 @@
 
         <div class="article-meta">
           <div class="categories">
-            <span class="label nes-text is-primary">Categories</span>
+            <span class="label nes-text is-primary">
+              <i class="nes-icon cloud"></i>
+            </span>
             <span
               class="category muted"
               v-for="(category, index) in $page.post.categories"
@@ -25,8 +27,10 @@
             </span>
           </div>
 
-          <div class="date">
-            <span class="label muted mr-2">Posted</span>
+          <div class="date d-flex">
+            <span class="label muted mr-2">
+              <i class="calendar nes-icon"></i
+            ></span>
             <span class="muted" v-html="$page.post.date" />
           </div>
         </div>
@@ -36,9 +40,6 @@
             v-html="$page.post.content"
             class="article-content project-inner mb-5 mt-5"
           />
-
-          <br />
-          <br />
 
           <g-link to="/work" class="nes-balloon from-left nes-pointer">
             Liked? it <i class="nes-icon like mb-0"></i> <br />

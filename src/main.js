@@ -17,6 +17,11 @@ export default function(Vue, { router, head, isClient }) {
       rel: "stylesheet",
       href:
         "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap",
+    },
+    {
+      rel: "stylesheet",
+      href:
+        "https://unpkg.com/nes.icons@3.0.0-beta.3/css/nes-icons.min.css",
     }
   );
 }
