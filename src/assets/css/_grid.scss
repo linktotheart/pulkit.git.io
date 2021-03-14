@@ -25,17 +25,18 @@
 }
 @media (min-width: 768px){
 	.grid-item-alt{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+	}
+	.grid-item-alt:nth-child(4n+2),
+	.grid-item-alt:nth-child(4n+3){
+
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
 	max-width: 40%;
-	}
-	.grid-item-alt:nth-child(4n+2),
-	.grid-item-alt:nth-child(4n+3){
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 60%;
-    flex: 0 0 60%;
-	max-width: 60%;
 	}
 	
 }

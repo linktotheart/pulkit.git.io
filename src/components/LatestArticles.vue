@@ -14,12 +14,15 @@
                 <h4 class="article-title">{{ item.node.title }}</h4>
                 <div class="date">
                   <span class="is-primary">{{ item.node.date }}</span>
-                </div>
-                <div class="time">
                   <span class="is-muted"
                     >{{ item.node.timeToRead }} Min(s)
                   </span>
                 </div>
+                <p>
+                  {{ `${item.node.excerpt.slice(0, 80)}...` }}
+                  <br />
+                </p>
+                <span class="nes-text link is-primary">Read More --> </span>
               </g-link>
             </div>
           </div>

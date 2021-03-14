@@ -1,7 +1,7 @@
 <template>
   <footer class="main-footer">
     <div class="container">
-      <div class="nes-container is-dark with-title is-rounded">
+      <div class="nes-container is-dark with-title">
         <p class="title" v-html="settings.footer_title" />
         <div class="cont d-flex">
           <i class="nes-mario is-small animate"></i>

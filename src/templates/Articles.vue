@@ -5,6 +5,9 @@
         <div class="container container-sm">
           <div class="article-header">
             <h1 v-html="$page.post.title" class="article-title" />
+            <p class="lead">
+              {{ $page.post.title }}
+            </p>
           </div>
         </div>
 
@@ -12,19 +15,18 @@
           <g-image :src="$page.post.thumbnail.src" :alt="$page.post.title" />
         </div>
 
+        <div class="article-meta">
+          <div class="article-date">
+            <span class="label">Posted</span>
+            <div v-text="$page.post.date" />
+          </div>
+
+          <div class="article-time">
+            <span>{{ $page.post.timeToRead }} min read</span>
+          </div>
+        </div>
         <!---  content start -->
         <div class="container container-sm">
-          <div class="article-meta">
-            <div class="article-date">
-              <span class="label">Date</span>
-              <div v-text="$page.post.date" />
-            </div>
-
-            <div class="article-time">
-              <span class="label">Time</span>
-              <span>{{ $page.post.timeToRead }} min read</span>
-            </div>
-          </div>
           <ArticleContent :content="$page.post.content" />
         </div>
       </div>

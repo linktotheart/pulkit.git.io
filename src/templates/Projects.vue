@@ -5,6 +5,7 @@
         <div class="container container-sm">
           <div class="page-header">
             <h1 class="project-title title" v-html="$page.post.title" />
+            <p class="lead">{{ $page.post.excerpt }}</p>
           </div>
         </div>
 
@@ -12,25 +13,25 @@
           <g-image :alt="$page.post.title" :src="$page.post.thumbnail.src" />
         </div>
 
-        <div class="container container-sm">
-          <div class="project-info">
-            <div class="categories">
-              <span class="label nes-text is-primary">Categories</span>
-              <span
-                class="category muted"
-                v-for="(category, index) in $page.post.categories"
-                :key="index"
-              >
-                {{ category }}
-              </span>
-            </div>
-
-            <div class="date">
-              <span class="label mr-2">Posted</span>
-              <span class="muted" v-html="$page.post.date" />
-            </div>
+        <div class="project-info d-flex">
+          <div class="categories">
+            <span class="label nes-text is-primary">Categories</span>
+            <span
+              class="category muted"
+              v-for="(category, index) in $page.post.categories"
+              :key="index"
+            >
+              {{ category }}
+            </span>
           </div>
 
+          <div class="date">
+            <span class="label muted mr-2">Posted</span>
+            <span class="muted" v-html="$page.post.date" />
+          </div>
+        </div>
+
+        <div class="container container-sm">
           <article
             v-html="$page.post.content"
             class="content project-inner mb-5 mt-5"

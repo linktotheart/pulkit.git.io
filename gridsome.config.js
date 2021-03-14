@@ -8,7 +8,7 @@ module.exports = {
   siteName: "Pulkit' Journal",
   siteUrl: `localhost`,
   host: "0.0.0.0",
-  titleTemplate: "%s - Zen",
+  titleTemplate: "%s - Pulkit Singh",
   siteDescription: "Creative technologist",
   plugins: [
     {

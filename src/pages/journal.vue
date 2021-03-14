@@ -14,22 +14,27 @@
           <div class="grid">
             <div
               class="grid-item-3"
-              v-for="post in $page.posts.edges"
-              :key="post.node.id"
+              v-for="item in $page.posts.edges"
+              :key="item.node.id"
             >
-              <div class="article mb-3">
-                <div class="thumbnail">
-                  <g-image
-                    class="thum"
-                    :src="post.node.thumbnail.src"
-                    :alt="post.node.title"
-                  />
-                </div>
-                <g-link :to="post.node.path">
-                  <h3 class="title" v-html="post.node.title" />
+              <div class="article">
+                <g-link :to="item.node.path" class="block">
+                  <div class="thumb">
+                    <g-image class="thumbnail" :src="item.node.thumbnail.src" />
+                  </div>
+                  <h4 class="article-title">{{ item.node.title }}</h4>
+                  <div class="date">
+                    <span class="is-primary">{{ item.node.date }}</span>
+                    <span class="is-muted"
+                      >{{ item.node.timeToRead }} Min(s)
+                    </span>
+                  </div>
+                  <p>
+                    {{ `${item.node.excerpt.slice(0, 80)}...` }}
+                    <br />
+                  </p>
+                  <span class="nes-text link is-primary">Read More --> </span>
                 </g-link>
-                <p class="card-text" v-html="post.node.excerpt" />
-                <p class="muted date">{{ post.node.date }}</p>
               </div>
             </div>
           </div>

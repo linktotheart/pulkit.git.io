@@ -5,13 +5,12 @@
 @import "css/header";
 
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 body {
-  font-size: 16px;
   font-family: "Press Start 2P", cursive;
+  // font-family: "DotGothic16", cursive;
 }
 h1,
 h2,
@@ -19,10 +18,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #123;
+  color: #212224;
+  letter-spacing: 1px;
 }
 p {
-  color: #333;
+  color: #414245;
   margin-bottom: 1.5rem;
 }
 .muted {
@@ -44,13 +44,13 @@ main {
 }
 ///////////////// sections ///////////////////
 .hero {
-  padding: 6rem 0 8rem;
+  padding: 6rem 1rem 8rem;
   text-align: left;
   .container {
     position: relative;
   }
   .hero-title {
-    font-size: 2.6666rem;
+    font-size: 2.2222rem;
     margin-bottom: 2rem;
   }
   .social {
@@ -63,7 +63,7 @@ main {
   }
 }
 .projects {
-  padding-top: 6rem;
+  padding-top: 3rem;
 
   .project {
     display: flex;
@@ -102,7 +102,7 @@ main {
       &::before{
         content: "";
         display: block;
-        padding-top: calc(90% + 8px);
+        padding-top: 60%;
       }
     }
 
@@ -124,36 +124,87 @@ main {
   .grid-item-alt:nth-child(4n+2), .grid-item-alt:nth-child(4n+3){
     .project{
       .thumbnail::before{
-        padding-top: 60%;
+        padding-top: calc(90% + 8px);
+
       }
     }
   }
 }
 
 .articles {
-  padding: 5rem 0;
+  padding: 3rem 0;
   margin: 0;
-  .articles-inner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0 -1rem;
-    .article {
-      flex: 0 0 33.333333%;
-      padding: 1rem;
-
-      .block {
-        display: block;
-      }
-      .thumb {
-        max-height: 275px;
-        overflow: hidden;
-      }
-      .thumbnail {
-        max-width: 100%;
+  .article{
+    background: #f8f8ff;
+    padding: 0 0 1rem;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    transition: 0.45s ease;
+    &:hover{
+      background: #fafaff;
+      box-shadow: 0px 04px 0 #212224;
+      .thumb{
+        img{
+          transform: rotate(1deg);
+        }
       }
     }
+    .block{
+      display: flex;
+      width: 100%;
+      min-height: 100%;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    .thumb{
+      display: block;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      max-width: 100%;
+      min-height: 210px;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3S ease;
+        object-fit: cover;
+      }
+
+      &::before{
+        position: absolute;
+        content: '';
+        padding-top: 60%;
+        display: block;
+      }
+    }
+    .article-title{
+      font-size: 14px;
+      margin-bottom: 14px;
+      padding: 0 .85rem;
+    }
+    .date{
+      padding: 0 .85rem;
+      display: flex;
+      font-size: 12px;
+      color: #878788;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    
+    p,.link{
+      padding: 0 .75rem;
+      font-size: 13px;
+      margin-bottom: 1rem;
+      flex: auto;
+    }
+    .link{
+      margin-bottom: 0;
+    }
   }
+  
 }
 ///////// articles pAge
 .articles-wrap {

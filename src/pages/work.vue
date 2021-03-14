@@ -18,7 +18,7 @@
               :key="post.node.id"
             >
               <div class="project mb-3">
-                <g-link :to="post.node.path">
+                <g-link :to="post.node.path" class="project-link">
                   <div class="thumbnail">
                     <g-image
                       class="thum"

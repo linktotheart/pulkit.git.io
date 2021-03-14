@@ -9,7 +9,7 @@
 
 <page-query>
 query {
-  projects: allProjects (limit: 5) {
+  projects: allProjects (limit: 6) {
     edges{
       node{
         id
@@ -25,6 +25,7 @@ query {
         id
         title
         thumbnail
+        excerpt
         date (format: "DD MMM YYYY")
         path
         timeToRead
