@@ -3,8 +3,8 @@
     <div class="project">
       <div class="container">
         <div class="container container-sm">
-          <div class="page-header">
-            <h1 class="project-title title" v-html="$page.post.title" />
+          <div class="article-header">
+            <h1 class="article-title title" v-html="$page.post.title" />
             <p class="lead">{{ $page.post.excerpt }}</p>
           </div>
         </div>
@@ -13,7 +13,7 @@
           <g-image :alt="$page.post.title" :src="$page.post.thumbnail.src" />
         </div>
 
-        <div class="project-info d-flex">
+        <div class="article-meta">
           <div class="categories">
             <span class="label nes-text is-primary">Categories</span>
             <span
@@ -34,8 +34,11 @@
         <div class="container container-sm">
           <article
             v-html="$page.post.content"
-            class="content project-inner mb-5 mt-5"
+            class="article-content project-inner mb-5 mt-5"
           />
+
+          <br />
+          <br />
 
           <g-link to="/work" class="nes-balloon from-left nes-pointer">
             Liked? it <i class="nes-icon like mb-0"></i> <br />

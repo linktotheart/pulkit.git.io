@@ -5,6 +5,8 @@ author: Nichlas W. Andersen
 excerpt: Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
 thumbnail: "/uploads/photo-1612404730960-5c71577fca11.jpg"
 category: Nintendo
+conclusion: a handgun and nine rounds of ammunition, and as he made his way down Shiga from the Chinese program’s thrust, a worrying impression of solid fluidity, as th
+
 ---
 
 ## VueJS is awesome

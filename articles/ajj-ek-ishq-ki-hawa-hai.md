@@ -5,8 +5,8 @@ categories:
 - other
 - new
 thumbnail: "/uploads/thank-you.jpg"
-description: "<p></p>"
-
+excerpt: "<p>new</p>"
+conclusion: this is a test conclusion please help me
 ---
 # Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 

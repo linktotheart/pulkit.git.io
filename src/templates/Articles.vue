@@ -14,20 +14,44 @@
         <div class="thumbnail">
           <g-image :src="$page.post.thumbnail.src" :alt="$page.post.title" />
         </div>
-
         <div class="article-meta">
           <div class="article-date">
-            <span class="label">Posted</span>
-            <div v-text="$page.post.date" />
+            <span class="label">Posted &nbsp; </span>
+            <span v-text="$page.post.date" />
           </div>
 
           <div class="article-time">
             <span>{{ $page.post.timeToRead }} min read</span>
           </div>
         </div>
+
         <!---  content start -->
         <div class="container container-sm">
           <ArticleContent :content="$page.post.content" />
+          <div class="conclusion">
+            <div class="nes-container with-title">
+              <p class="title">Conclusion</p>
+              <p>{{ $page.post.conclusion }}</p>
+            </div>
+          </div>
+          <div class="category">
+            <a
+              href="#"
+              class="nes-badge"
+              :key="cat.id"
+              v-for="cat in $page.post.categories"
+            >
+              <span
+                :class="{
+                  'is-primary': $page.post.categories.indexOf(cat) == 0,
+                  'is-success': $page.post.categories.indexOf(cat) == 1,
+                  'is--error': $page.post.categories.indexOf(cat) == 2,
+                }"
+              >
+                {{ cat }}
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +65,9 @@ query articles ($path: String!) {
     date (format: "DD, MMMM YY")
     timeToRead
     content
+    categories
     path
+    conclusion
     thumbnail
   }
 }

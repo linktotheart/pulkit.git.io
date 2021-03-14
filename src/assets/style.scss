@@ -4,10 +4,16 @@
 @import "css/grid";
 @import "css/header";
 
-* {
 
+$accent: #06f;
+* {
   box-sizing: border-box;
 }
+
+html{
+  font-size: 80%;
+}
+
 body {
   font-family: "Press Start 2P", cursive;
   // font-family: "DotGothic16", cursive;
@@ -44,7 +50,7 @@ main {
 }
 ///////////////// sections ///////////////////
 .hero {
-  padding: 6rem 1rem 8rem;
+  padding: 6rem 1rem 11rem;
   text-align: left;
   .container {
     position: relative;
@@ -70,6 +76,7 @@ main {
     height: calc(100% - 30px);
     margin-bottom: 30px;
     position: relative;
+    background: #fafaff;
     .project-link{
       display: block;
       width: 100%
@@ -206,12 +213,8 @@ main {
   }
   
 }
-///////// articles pAge
-.articles-wrap {
-  display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
-}
+
+@import './css/art';
 
 .main-footer {
   padding: 4rem 0 1.5rem;
