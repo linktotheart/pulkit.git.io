@@ -21,7 +21,7 @@ export default function(Vue, { router, head, isClient }) {
     {
       rel: "stylesheet",
       href:
-        "https://unpkg.com/nes.icons@3.0.0-beta.3/css/nes-icons.min.css",
+        "https://unpkg.com/nes.icons@3.0.0-beta.3/css/nes-icons.min.cssx`",
     }
   );
 }
