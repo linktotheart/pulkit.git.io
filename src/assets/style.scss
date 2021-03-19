@@ -1,4 +1,4 @@
-@import "./css/nes.css";
+@import "./css/bootstrap.min.css";
 @import "css/mixin";
 @import "css/layout";
 @import "css/grid";
@@ -10,37 +10,14 @@ $accent: #06f;
   box-sizing: border-box;
 }
 
-html{
-  font-size: 80%;
-}
 
-body {
-  font-family: "Press Start 2P", cursive;
-  // font-family: "DotGothic16", cursive;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #212224;
-  letter-spacing: 1px;
-}
-p {
-  color: #414245;
-  margin-bottom: 1.5rem;
-}
-.muted {
-  color: #777;
-}
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 .wrapper {
-  padding-top: 75px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -56,7 +33,8 @@ main {
     position: relative;
   }
   .hero-title {
-    font-size: 2.2222rem;
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 2rem;
   }
   .social {
