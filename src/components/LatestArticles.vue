@@ -19,7 +19,7 @@
                   </span>
                 </div>
                 <p>
-                  {{ `${item.node.excerpt.slice(0, 80)}...` }}
+                  {{ `${item.node.excerpt.slice(0, 120)}...` }}
                   <br />
                 </p>
                 <span class="nes-text link is-primary">Read More --> </span>

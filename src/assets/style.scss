@@ -100,7 +100,7 @@ main {
       right: 0;
       transform: translateY(100%);
       transition: 0.35s ease all;
-      backdrop-filter: blur(2px);
+      backdrop-filter: blur(10px);
       h5 {
         margin-bottom: 0;
       }
@@ -166,14 +166,14 @@ main {
       }
     }
     .article-title{
-      font-size: 14px;
+      font-size: 18px;
       margin-bottom: 14px;
       padding: 0 .85rem;
     }
     .date{
       padding: 0 .85rem;
       display: flex;
-      font-size: 12px;
+      font-size: 14px;
       color: #878788;
       justify-content: space-between;
       margin-bottom: 1rem;
@@ -181,12 +181,14 @@ main {
     
     p,.link{
       padding: 0 .75rem;
-      font-size: 13px;
+      font-size: 16px;
       margin-bottom: 1rem;
       flex: auto;
+      color: #454245;
     }
     .link{
       margin-bottom: 0;
+      color: #06f
     }
   }
   

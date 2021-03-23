@@ -9,53 +9,53 @@
           </p>
         </div>
 
-        <div class="d-flex">
-          <div class="contact-form">
-            <div class="nes-container is-rounded mt-3" style="background: #fff">
+       <div class="">
+          <div class="row">
+          <div class=" contact-form">
               <form action="#" @submit.prevent="handleForm">
-                <div class="nes-field is-dark mb-3">
+                <div class="form-group">
                   <label for="name_field">Your name</label>
                   <input
                     v-model="name"
                     type="text"
                     id="name_field is-dark"
-                    class="nes-input"
-                    :class="{ 'is-error': submitted && $v.name.$error }"
+                    class="form-control"
+                    :class="{ 'is-invalid': submitted && $v.name.$error }"
                   />
                   <small
                     v-if="submitted && !$v.name.required"
-                    class="nes-text is-error"
+                    class="text-danger"
                     >Please Enter your name
                   </small>
                 </div>
 
-                <div class="nes-field mb-3">
+                <div class="form-group mb-3">
                   <label for="name_field">Your Email</label>
                   <input
                     type="email"
                     id="name_field is-dark"
-                    class="nes-input"
+                    class="form-control"
                     v-model="email"
-                    :class="{ 'is-error': submitted && $v.name.$error }"
+                    :class="{ 'is-invalid': submitted && $v.name.$error }"
                   />
                   <small
                     v-if="submitted && !$v.email.required"
-                    class="nes-text is-error"
+                    class="text-danger"
                     >Please Enter your email</small
                   >
                   <small
                     v-if="submitted && !$v.email.email"
-                    class="nes-text is-error"
+                    class="text-danger"
                     >Please Enter a valid email</small
                   >
                 </div>
 
                 <label for="default_select">Subject</label>
                 <div
-                  class="nes-select mb-3"
+                  class="form-group mb-3"
                   :class="{ 'is-error': submitted && $v.subject.$error }"
                 >
-                  <select id="default_select" v-model="subject">
+                  <select class="custom-select" :class="{ 'is-invalid': submitted && $v.subject.$error }" id="default_select" v-model="subject">
                     <option value="" disabled selected hidden>Select...</option>
                     <option value="Work together">Work together</option>
                     <option value="Discuss a project">Discuss a project</option>
@@ -64,59 +64,41 @@
 
                   <small
                     v-if="submitted && !$v.message.required"
-                    class="nes-text is-error"
+                    class="text-danger"
                     >Please choose a subject</small
                   >
                 </div>
 
-                <div class="nes-field mb-3">
+                <div class="form-group mb-3">
                   <label for="#message">Your Message here</label>
                   <textarea
                     v-model="message"
                     name="message"
                     id="name-field"
                     rows="4"
-                    class="nes-input"
+                    class="form-control"
                     :class="{ 'is-error': submitted && $v.message.$error }"
                   ></textarea>
                   <small
                     v-if="submitted && !$v.message.required"
-                    class="nes-text is-error"
+                    class="text-danger"
                     >Please Enter your message</small
                   >
                 </div>
-                <div>
-                  <p class="nes-text">
-                    Did you like this site? <br />
-                    <label class="mr-2 mt-2 mb-0">
-                      <input
-                        type="radio"
-                        class="nes-radio"
-                        name="answer"
-                        checked
-                      />
-                      <span>Yes</span>
-                    </label>
-
-                    <label class="mb-0">
-                      <input type="radio" class="nes-radio" name="answer" />
-                      <span>No</span>
-                    </label>
-                  </p>
-                </div>
-                <p class="nes-text is-disabled">
+                
+                <p class="text-muted">
                   <small
                     >Your personal details will be completely secured.</small
                   >
                 </p>
-                <button class="nes-btn is-primary" type="submit">
+                <button class="btn-primary btn px-4" type="submit">
                   &nbsp; Send &nbsp;
                 </button>
               </form>
             </div>
             <!-- ./form-->
-          </div>
         </div>
+       </div>
       </div>
     </div>
   </Layout>

@@ -1,18 +1,13 @@
 <template>
-  <footer class="main-footer">
+  <footer class="main-footer pb-0 bg-dark">
     <div class="container">
-      <div class="nes-container is-dark with-title">
-        <p class="title" v-html="settings.footer_title" />
-        <div class="cont d-flex">
-          <i class="nes-mario is-small animate"></i>
-          <h2>
-            <a class="nes-text is-primary" href="#">
-              pulkitsingh302@gmail.com
-            </a>
-          </h2>
-          <i class="nes-icon coin is-large animate"></i>
-        </div>
-        <p class="footer-lower mb-0" v-html="settings.footer" />
+      <div class="row">
+
+      </div>
+      <div class="border-top py-3   ">
+        <p class="small mb-0 text-muted text-center">
+          Copyright {{year}}
+        </p>
       </div>
     </div>
   </footer>
@@ -23,7 +18,11 @@ export default {
   data() {
     return {
       settings: require("../../data/theme.json"),
+      year: null
     };
+  },
+  computed() {
+    year = Date.getYear;
   },
   components: {
     name: "Footer",

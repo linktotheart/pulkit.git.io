@@ -7,7 +7,7 @@
         <div class="grid-item-alt" v-for="item in projects" :key="item.node.id">
           <div
             :style="{ transform: 'translate(' + offX + 'turn)' }"
-            class="project mb-3"
+            class="project mb-4"
             @mouseover="hovering"
           >
             <g-link class="project-link" :to="item.node.path">

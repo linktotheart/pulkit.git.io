@@ -1,17 +1,17 @@
 <template>
   <header class="sticky-top " >
 
-    <nav class="navbar  navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="/">
+    <nav class="navbar px-md-4 px-lg-5  navbar-expand-lg navbar-dark bg-primary">
+      <a class="font-weight-bold text-capitalize navbar-brand" href="/">
         <h3 class="mb-0 text-white" v-html="settings.header_title" />
       </a>
      
       <div class="navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <g-link to="/work" class="nav-link">Work</g-link>
+          <li class="nav-item mr-md-4">
+            <g-link to="/work" class="nav-link ">Work</g-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-md-3">
             <g-link to="/journal" class="nav-link">Journal</g-link>
           </li>
           <li class="nav-item">

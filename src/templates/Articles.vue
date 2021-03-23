@@ -28,10 +28,11 @@
         <!---  content start -->
         <div class="container container-sm">
           <ArticleContent :content="$page.post.content" />
+
           <div class="conclusion">
-            <div class="nes-container with-title">
-              <p class="title">Conclusion</p>
-              <p>{{ $page.post.conclusion }}</p>
+            <div class="alert alert-primary">
+              <p><strong>Conclusion</strong></p>
+              <p class="mb-0 em font-style-italic">{{ $page.post.conclusion }}</p>
             </div>
           </div>
           <div class="category">
