@@ -1,14 +1,17 @@
 <template>
   <Layout>
-    <div class="container">
-      <div class="page-header">
-        <h1 class="title is-centered">Journals</h1>
+    <div >
+      <div class="page-header pt-0">
+        <div class="page-title bg-danger py-5">
+          <div class="container">
+              <h1 class="text-dark"> Journals</h1>
+              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ullam repudiandae ipsa minima quaerat error, culpa aut ex deleniti eligendi ducimus? </p>
+          </div>
       </div>
-      <div class="page-body">
-        <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa
-          adipisci laboriosam corporis explicabo.
-        </p>
+        
+      </div>
+      <div class="page-body container">
+       
 
         <div class="articles">
           <div class="grid">

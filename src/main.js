@@ -4,24 +4,10 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/style.scss";
 
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
-  head.link.push(
-    {
-      rel: "prefetch",
-      href: "https://fonts.gstatic.com",
-    },
-    {
-      rel: "stylesheet",
-      href:
-        "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap",
-    },
-    {
-      rel: "stylesheet",
-      href:
-        "https://unpkg.com/nes.icons@3.0.0-beta.3/css/nes-icons.min.cssx`",
-    }
-  );
+  
 }

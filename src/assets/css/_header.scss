@@ -1,27 +1,29 @@
-.main-header{
-    backdrop-filter: blur(2px);
-    position: fixed;
-    top: 0;
-    background-color: #05f;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    opacity: .9;
-    > .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    .logo {
-        align-items: baseline;
-        text-decoration: none;
-        > h3 {
-            color: #fff;
-            margin-bottom: 0;
+nav.navbar{
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    &.bg-danger{
+        h3.text-white{
+            color: #2b0f54 !important;
         }
-      }
 
-      
+        .nav-link{
+            color: #2b0f54cc;
+
+            &:hover{
+                color: #2b0f54;
+            }
+        }
+    } 
+
+
+
+
+    .navbar{
+        .nav-link{
+            transition: 0.3s ease;
+            &:hover{
+                
+            }
+        }
+    }
 }

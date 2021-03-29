@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <Hero />
+
     <FeaturedPost :projects="$page.projects.edges" />
     <LatestArticles :articles="$page.articles.edges" />
     <!-- <CallToAction /> -->

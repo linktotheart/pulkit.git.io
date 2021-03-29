@@ -32,11 +32,11 @@ export default {
 
 <style>
 .fade-enter-active {
-  transition: all 0.5s ease;
+  transition: all 0.35s ease;
 }
 
 .fade-enter {
-  transform: translateY(-3rem);
-  opacity: 0;
+  transform: translateY(-1rem);
+  opacity: 0.95;
 }
 </style>

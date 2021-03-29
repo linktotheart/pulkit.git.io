@@ -13,6 +13,7 @@
     "eslint-plugin-gridsome": "^1.6.1",
     "gridsome": "^0.7.23",
     "vee-validate": "^4.1.18",
+    "vue-icon": "^2.2.0",
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {

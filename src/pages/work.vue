@@ -1,14 +1,18 @@
 <template>
   <Layout>
-    <div class="container">
-      <div class="page-header">
-        <h1 class="title is-centered">Works</h1>
+    <div>
+
+      <div class="page-header bg-success">
+        <div class="container text-white py-5">
+          <h1 class="text-white">Works</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa
+            adipisci laboriosam corporis explicabo.
+          </p>
+        </div>
       </div>
-      <div class="page-body">
-        <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa
-          adipisci laboriosam corporis explicabo.
-        </p>
+      <div class="page-body container">
+       
 
         <div class="projects">
           <div class="grid">

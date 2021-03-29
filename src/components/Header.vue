@@ -1,7 +1,10 @@
 <template>
   <header class="sticky-top " >
 
-    <nav class="navbar px-md-4 px-lg-5  navbar-expand-lg navbar-dark bg-primary">
+    <nav 
+    class="navbar px-md-4 px-lg-5  navbar-expand-lg navbar-dark bg-primary"
+    :class="{ 'bg-danger text-white' : ($route.path == '/journal'),
+     'bg-success text-success' : ($route.path == '/work')} ">
       <a class="font-weight-bold text-capitalize navbar-brand" href="/">
         <h3 class="mb-0 text-white" v-html="settings.header_title" />
       </a>
