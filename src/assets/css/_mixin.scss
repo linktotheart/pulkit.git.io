@@ -1,10 +1,26 @@
-.d-flex{
-    display: flex;
-}
+$primary: #fff6da;
+$secondary: #84f2d6;
+$accent: #fc6b3f;
+$dark: #262525;
+
+
+
 .center{
     justify-content: center;
     align-items: center;
 }
 .lead{
     letter-spacing: 1px;
+}
+.bg-primary{
+    background: $primary !important;
+}
+.bg-secondary{
+    background: $secondary !important;
+}
+.bg-dark{
+    background: $dark;
+}
+.bg-danger{
+    background-color: $accent !important;
 }

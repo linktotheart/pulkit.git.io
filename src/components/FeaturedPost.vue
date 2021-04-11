@@ -1,29 +1,25 @@
 <template>
-  <div class="projects">
+  <div class="projects pt-0 mt-6">
     <div class="container">
-      <h2 class="section-title"><i class="nes-icon heart"></i> Works</h2>
+      <h2 class="section-title h1 mb-4 font-weight-bold">Selected Works 🔥 </h2>
 
-      <div class="grid">
-        <div class="grid-item-alt" v-for="item in projects" :key="item.node.id">
-          <div
-            :style="{ transform: 'translate(' + offX + 'turn)' }"
-            class="project mb-4"
-            @mouseover="hovering"
-          >
-            <g-link class="project-link" :to="item.node.path">
-              <div class="thumbnail">
+      <div class="card-columns">
+
+        <g-link class="card d-flex card-overlay text-center text-dark" :to="item.node.path" v-for="item in projects" :key="item.node.id">
+              <span class="card-img">
                 <g-image
-                  class="thumb"
+                  class="thumb img-fluid"
                   :src="item.node.thumbnail"
                   :alt="item.node.title"
                 />
-                <div class="caption">
-                  <h5 class="project-title title">{{ item.node.title }}</h5>
-                </div>
-              </div>
-            </g-link>
-          </div>
-        </div>
+                <span class="background-color " style="background-color: rgba(14, 14, 14, .3);"></span>
+              </span>
+
+              <span class="card-img-overlay">
+                <h4 class="card-title h4">{{ item.node.title }}</h4>
+                <span class="card-category subtitle"> {{ item.node.categories[0] }}</span>
+              </span>
+        </g-link>
       </div>
     </div>
   </div>
@@ -44,11 +40,6 @@ export default {
     },
   },
   methods: {
-    hovering(e) {
-      console.log(e.offsetX, e.offsetY);
-      this.offX = e.offsetX;
-      this.offY = e.offsetY;
-    },
   },
 };
 </script>

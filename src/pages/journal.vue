@@ -1,15 +1,12 @@
 <template>
   <Layout>
-    <div >
-      <div class="page-header pt-0">
-        <div class="page-title bg-danger py-5">
-          <div class="container">
-              <h1 class="text-dark"> Journals</h1>
+        <div class="page-title bg-secondary py-6">
+          <div class="container mt-4">
+              <h1 class="text-dark font-weight-bolder"> Journals</h1>
               <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ullam repudiandae ipsa minima quaerat error, culpa aut ex deleniti eligendi ducimus? </p>
           </div>
-      </div>
-        
-      </div>
+        </div>
+  
       <div class="page-body container">
        
 

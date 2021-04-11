@@ -2,15 +2,12 @@
   <Layout>
     <div>
 
-      <div class="page-header bg-success">
-        <div class="container text-white py-5">
-          <h1 class="text-white">Works</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa
-            adipisci laboriosam corporis explicabo.
-          </p>
+        <div class="page-title bg-secondary py-6">
+          <div class="container mt-4">
+              <h1 class="text-dark font-weight-bolder"> Selected Works </h1>
+              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ullam repudiandae ipsa minima quaerat error, culpa aut ex deleniti eligendi ducimus? </p>
+          </div>
         </div>
-      </div>
       <div class="page-body container">
        
 

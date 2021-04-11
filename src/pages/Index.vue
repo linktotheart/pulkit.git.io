@@ -17,6 +17,7 @@ query {
         title
         thumbnail 
         path
+        categories
       }
     }
   },

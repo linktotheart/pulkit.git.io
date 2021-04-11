@@ -1,28 +1,54 @@
-nav.navbar{
-    backdrop-filter: blur(10px);
-    transition: 0.3s ease;
-    &.bg-danger{
-        h3.text-white{
-            color: #2b0f54 !important;
+.main-header{
+    &.active{
+        .navbar::before{
+            -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+            transform: translateY(0%);
         }
-
-        .nav-link{
-            color: #2b0f54cc;
-
-            &:hover{
-                color: #2b0f54;
+    }
+    nav.navbar{
+        position: relative;
+        background: transparent;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            will-change: transform;
+            -webkit-transition: -webkit-transform .6s cubic-bezier(.2,1,.2,1);
+            transition: -webkit-transform .6s cubic-bezier(.2,1,.2,1);
+            -o-transition: transform .6s cubic-bezier(.2,1,.2,1);
+            transition: transform .6s cubic-bezier(.2,1,.2,1);
+            transition: transform .6s cubic-bezier(.2,1,.2,1),-webkit-transform .6s cubic-bezier(.2,1,.2,1);
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+            z-index: -1;
+        }
+            h3{
+                color: $dark !important;
+                font-weight: 700;
             }
-        }
-    } 
-
-
-
-
-    .navbar{
-        .nav-link{
-            transition: 0.3s ease;
-            &:hover{
-                
+    
+            .nav-link{
+                color: lighten($dark, 15%);
+                &:hover{
+                    color: $dark;
+                }
+            }
+    
+    
+    
+        .navbar{
+            .nav-link{
+                transition: 0.3s ease;
+                &:hover{
+                    
+                }
             }
         }
     }
