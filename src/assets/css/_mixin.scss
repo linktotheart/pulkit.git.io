@@ -2,8 +2,35 @@ $primary: #fff6da;
 $secondary: #84f2d6;
 $accent: #fc6b3f;
 $dark: #262525;
+ /////////// device width and screensize ////////////////
+  // Small screen / phone
+  $sm: 576px;
+  // Medium screen / tablet
+  $md: 768px;
+  // Large screen / desktop
+  $lg: 992px;
+  // Extra large screen / wide desktop
+  $xl: 1200px;
 
+  ::selection {
+    color: #fff;
+    background: lighten($accent, 5) ;
+}
 
+@mixin mediaq($xy) {
+    @media only screen and (max-width: $xy){
+        @content;
+    }
+ }
+ 
+@mixin center {    display: flex;    align-items: center;    justify-content: center;}
+.btn{
+    border-radius: 0;
+    &.focus, &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
 
 .center{
     justify-content: center;
@@ -24,3 +51,4 @@ $dark: #262525;
 .bg-danger{
     background-color: $accent !important;
 }
+

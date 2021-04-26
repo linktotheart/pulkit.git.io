@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Pulkit' Journal",
+  siteName: "Pulkit Journal",
   siteUrl: `localhost`,
   host: "0.0.0.0",
   titleTemplate: "%s - Pulkit Singh",

@@ -1,12 +1,12 @@
 <template>
   <section class="hero bg-primary py-6">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-8">
+      <div class="row flex-column-reverse flex-lg-row align-items-center">
+        <div class="col-lg-8">
           <div class="inner mt-4  ">
-            <h1 class="display-4  text-capitalize font-weight-bold" v-html="settings.hero_title" />
-            <p class="lead mb-0" v-html="settings.hero_subtitle" />
-            <div class="btn-group mt-3">
+            <h1 class="display-4  text-center text-lg-left text-capitalize font-weight-bold" v-html="settings.hero_title" />
+            <p class="lead text-center text-lg-left mb-0" v-html="settings.hero_subtitle" />
+            <div class="btn-group mt-4 ">
                 <g-link class="btn btn-warning px-4 mr-3" to="/contact"
                   >Say Hi</g-link
                 >
@@ -15,8 +15,8 @@
             <SocialLink />
           </div>
         </div>
-        <div class="col-xl-4 d-flex align-items-center">
-          <picture class="d-flex bg-secondary rounded-circle ml-md-auto">
+        <div class="col-lg-4 col-md-6 mx-auto d-flex mb-4 mb-lg-0 align-items-center">
+          <picture class="d-flex bg-secondary rounded-circle ml-md-auto ml-auto mr-auto">
             <g-image width="300" class="m-n4" src="~/assets/img/pulkit (1).png" />
           </picture>
         </div>

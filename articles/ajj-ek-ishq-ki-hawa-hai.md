@@ -5,7 +5,7 @@ categories:
 - other
 - new
 thumbnail: "/uploads/thank-you.jpg"
-excerpt: "<p>new</p>"
+excerpt: "new post is this a new file"
 conclusion: this is a test conclusion please help me
 ---
 # Lorem ipsum dolor sit amet, consectetur adipiscing elit.

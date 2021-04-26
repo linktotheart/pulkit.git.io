@@ -1,11 +1,12 @@
 .article, .project{
    .article-header{
-      padding: 3rem 0;
+      padding: 5rem 0 3rem;
       .article-title{
          font-size: 2.6666rem;
          text-transform: capitalize;
          letter-spacing: 0px;
-         margin-bottom: 1.5rem;
+         margin-bottom: 1.1255rem;
+         font-weight: 700;
       }
       .lead{
          color: #999;
@@ -16,14 +17,10 @@
    }
 
    .thumbnail{
-      overflow: hidden;
-      max-height: 75vh;
-      display: flex;
       width: 100%;
-      img{
-         height: 100%;
-         object-fit: cover;
-      }
+     img{
+        max-width: 100%;
+     }
    }
 
    .article-meta{
@@ -31,24 +28,29 @@
       justify-content: space-between;
       margin-bottom: 3rem;
       padding-bottom: 1rem;
-      font-size: 14px;
+      font-size: .95rem;
+      letter-spacing: 1px;
       border-bottom: 3px solid #eee;
-      color: #a1a3a3;
-
+      color: #999;
+      padding-top: 1rem;
    }
 }
 
 // markdown css github 
 .article-content{
    margin-bottom: 6rem;
-   p{margin-bottom: 1.25rem;
-      font-size: 15px;
-   color: #565757;line-height: 1.75; letter-spacing: 1px;}
+   p{margin-bottom: 1.5rem;
+      font-size: 1rem;
+   color: #565757;line-height: 1.75; letter-spacing: 1px;
+> img {
+   margin-bottom: 0;
+}}
    
    h1,
    h2,
    h3 {
-   margin-bottom: 1.5rem;
+      font-weight: 600;
+   margin-bottom: 1.255rem;
    }
    img{
       margin-bottom: 1.5rem;
