@@ -92,8 +92,7 @@ export default {
     }
   },
   created () {
-    window.addEventListener('scroll', this.handleSCroll);
-
+    // window.addEventListener('scroll', this.handleSCroll);
   },
 };
 </script>
