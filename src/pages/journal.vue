@@ -38,9 +38,10 @@
             </div>
             </div>
           </div>
+
         </div>
       </div>
-    </div>
+
 
     <!-- <CallToAction /> -->
   </Layout>
