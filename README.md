@@ -1,5 +1,12 @@
-# Gridsome and NES.css Journal-cum-Portfolio
+# Personal Pulkit Journal 
 
+> #### Dependencies
+> 1. Boostrap4 
+> 2. Vue
+> 3. Forestry.io
+> 4. Gridsome
+
+### Starter Guide With Gridsome 
 This is the project you get when you run `gridsome create new-project`.
 
 ### 1. Install Gridsome CLI tool if you don't have
