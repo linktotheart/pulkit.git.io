@@ -40,6 +40,11 @@
       </a>
 
       <div class="navbar-collapse" :class="{ 'nav-open': showNav }">
+        <span class="bg" aria-hidden="true"></span>
+        <span class="bg" aria-hidden="true"></span>
+        <span class="bg" aria-hidden="true"></span>
+        <span class="bg" aria-hidden="true"></span>
+
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mr-md-4">
             <g-link to="/work" class="nav-link">Work</g-link>

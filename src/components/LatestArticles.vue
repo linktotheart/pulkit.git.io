@@ -5,13 +5,13 @@
 
 
      
-        <div class="grid">
-          <div class="grid-item-3" v-for="item in articles" :key="item.node.id">
+        <div class="row ">
+          <div class="col-lg-4" v-for="item in articles" :key="item.node.id">
             <div class="card card-blog border-0 card-vertical">
               <g-link :to="item.node.path" class="card-img mb-3 d-block">
                   <g-image class="thumbnail img-fluid" :src="item.node.thumbnail.src" />
               </g-link>
-                <g-link :to="item.node.path" class="card-title mb-3 h4 text-dark text-decoration-none">{{ item.node.title }}</g-link>
+                <g-link :to="item.node.path" class="card-title mb-3 h4 text-dark text-capitalize text-decoration-none">{{ item.node.title }}</g-link>
                 
                 <span class="card-date">{{ item.node.date }}</span>
              
@@ -28,6 +28,7 @@
             </div>
           </div>
         </div>
+       
     </div>
   </div>
 </template>

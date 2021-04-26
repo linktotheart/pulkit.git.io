@@ -42,30 +42,115 @@
             }
     
     
-    
-        .navbar{
-            .nav-link{
-                transition: 0.3s ease;
-                &:hover{
-                    
+            
+            .navbar-collapse{
+                @include mediaq($lg) {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100vh;
+                    width: 16rem;
+                    visibility: hidden;
+                    padding: 4rem 2rem 3rem;
+                    z-index: 5;
+                    .navbar-nav{
+                        position: relative;
+                        z-index: 5;
+                        margin-top: 10vh;
+                        margin-left: unset !important;
+                        .nav-item{
+                            margin: 0 !important;  
+                            margin-bottom: 2rem !important;
+                            display: block;
+                            transition: 0.45s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+                            opacity: 0;
+                            transform: translateX(-150%);
+                            .nav-link{
+                                font-size: 1.6666rem;
+                                font-weight: 800;
+                                letter-spacing: 3px;
+                                text-transform: uppercase;
+                                text-align: center;
+                                color: #fff8;
+                                transition: 0.25s;
+
+                                &:hover,
+                                &:active,
+                                &.active{
+                                    color: #fffc;
+                                    
+                                }
+                                &.active{
+                                    text-decoration: line-through;
+                                }
+                            }
+                            @for $i from 1 through 4 {
+                                &:nth-child(#{$i}) {
+                                  transition-delay: calc(0.2s * #{$i});
+                                }
+                              }
+                        }
+
+                    }
+                    .bg{
+                        position: absolute;
+                        background-color: #333;
+                        height: 25vh;
+                        left: 0;
+                        width: 100%;
+                        transform: translateX(-100%);
+                        transition: .25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                        z-index: 2;
+                        &:nth-child(1){
+                            top: 0%;
+                            transition-delay: .1s;
+                        }
+                        &:nth-child(2){
+                            top: 25%;
+                            transition-delay: .25s;
+                        }
+                        &:nth-child(3){
+                            top: 50%;
+                            transition-delay: .35s;
+                        }
+                        &:nth-child(4){
+                            top: 75%;
+                            transition-delay: .45s;
+                        }
+                    }
+                }
+                
+                &.nav-open{
+                    visibility: visible;
+                    transition: 0.25s;
+                   .bg{
+                    transform: translateX(0);
+                   }
+                   .navbar-nav{
+                        .nav-item{
+                            opacity: 1;
+                            transform: translateX(00%);
+                        }
+                   }
                 }
             }
-        }
 
         .nav-toggler{
+            display: none;
             position: absolute;
             height: 2.5rem;
             width: 2.5rem;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.822);
             text-align: center;
-            box-shadow: 0 0.25rem 0.75rem rgba(81, 89, 108, .3);
+            box-shadow: 0 0.25rem 0.75rem rgba(81, 89, 108, 0.089);
             border: none;
             outline: none;
             cursor: pointer;
             display: -webkit-box;
             display: -ms-flexbox;
-            display: flex;
+            display: none;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
@@ -73,9 +158,12 @@
             -ms-flex-align: center;
             align-items: center;
             padding: 0;
-            right: 0rem;
-            top: 1rem;
+            right: 1rem;
+            top: .751rem;
             z-index: 9999;
+            @include mediaq($lg) {
+                display: flex;
+            }
             .line {
                 fill: none;
                 stroke: black;
