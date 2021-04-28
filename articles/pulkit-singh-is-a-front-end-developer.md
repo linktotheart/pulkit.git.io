@@ -6,5 +6,8 @@ author: ''
 excerpt: This is to certify that my site is complete with vue.
 category: Slick
 columns: []
+categories:
+- Tag
+- Cut
 
 ---
