@@ -1,13 +1,4 @@
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 
-  &.container-sm {
-    max-width: 768px;
-  }
-}
 .page-header {
   padding: 3rem 0;
   h1.title {
@@ -28,7 +19,7 @@
   }
 }
 .btn{
-  padding: .55rem 2.5rem;
+  padding: .59rem 2.5rem;
   font-weight: 600;
   letter-spacing: 1px;
 }

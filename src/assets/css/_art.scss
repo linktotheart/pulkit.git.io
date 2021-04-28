@@ -38,19 +38,32 @@
 
 // markdown css github 
 .article-content{
-   margin-bottom: 6rem;
-   p{margin-bottom: 1.5rem;
-      font-size: 1rem;
-   color: #565757;line-height: 1.75; letter-spacing: 1px;
-> img {
-   margin-bottom: 0;
-}}
-   
+   margin-bottom: 3rem;
+   p{
+      margin-bottom: 1.5rem;
+      font-size: 1.025rem;
+      color: $dark; line-height: 1.7; letter-spacing: 1px;
+      > img {
+         margin-bottom: 0;
+      }
+
+      // &:first-of-type{
+      //    font-size: 1.125rem;    
+      //    color: lighten($dark, 20);
+      //    margin-bottom: 3rem;
+      // }
+}
+   h1{
+      margin-bottom: 1.5rem;
+   }
    h1,
    h2,
-   h3 {
+   h3,h4, h5 {
       font-weight: 600;
    margin-bottom: 1.255rem;
+      &:not(:first-child){
+         margin-top: 1rem;
+      }
    }
    img{
       margin-bottom: 1.5rem;
@@ -58,11 +71,14 @@
    blockquote {
       border-left: 8px solid #fafafa;
       padding: 1rem;
+      & > p {
+         margin-bottom: 0;
+      }
    }
    
    pre,
    code {
-      background-color: #fafafa;
+      background-color: #f3f3f7;
    }
    pre {
       padding: .5rem;
@@ -81,15 +97,26 @@
 
    & + .conclusion{
       margin-bottom: 3rem;
+
+      & > .alert p{
+         margin-bottom: 0;
+      }
    }
 
    & + .conclusion + .category{
       display: flex;
-      .nes-badge{
-         margin-right: 2rem;
-         width: auto;
-         min-width: 7rem;
-         font-size: 13px;
+
+     
+   }
+
+   ul{
+      list-style: square;
+      li{
+         margin-bottom: 0.125rem;
+         font-size: 1.025rem;
+         color: $dark;
+         letter-spacing: 1px;
       }
    }
+
 }

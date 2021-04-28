@@ -1,17 +1,20 @@
 <template>
   <Layout>
-    <div class="container">
-      <div class="page-inner">
-        <div class="page-header">
-          <h1 class="title mb-3">Contact</h1>
-          <p class="detail mb-0">
-            {{ settings.contact_text }}
-          </p>
+    <div class="contact">
+        <div class="page-header py-6" style="background: #ffcbcb">
+          <div class="container">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <h1 class="title display-4 mb-3">Contact</h1>
+              <p class="detail lead mb-0">
+                {{ settings.contact_text }}
+              </p>
+            </div>
+          </div>
         </div>
 
-       <div class="">
+        <div class="container">
           <div class="row">
-          <div class=" contact-form">
+            <div class="col-xl-8 col-lg-9 mx-auto mt-5 contact-form">
               <form action="#" @submit.prevent="handleForm">
                 <div class="form-group">
                   <label for="name_field">Your name</label>
@@ -19,7 +22,7 @@
                     v-model="name"
                     type="text"
                     id="name_field is-dark"
-                    class="form-control"
+                    class="form-control form-control-lg"
                     :class="{ 'is-invalid': submitted && $v.name.$error }"
                   />
                   <small
@@ -34,7 +37,7 @@
                   <input
                     type="email"
                     id="name_field is-dark"
-                    class="form-control"
+                    class="form-control form-control-lg"
                     v-model="email"
                     :class="{ 'is-invalid': submitted && $v.name.$error }"
                   />
@@ -43,9 +46,7 @@
                     class="text-danger"
                     >Please Enter your email</small
                   >
-                  <small
-                    v-if="submitted && !$v.email.email"
-                    class="text-danger"
+                  <small v-if="submitted && !$v.email.email" class="text-danger"
                     >Please Enter a valid email</small
                   >
                 </div>
@@ -55,7 +56,12 @@
                   class="form-group mb-3"
                   :class="{ 'is-error': submitted && $v.subject.$error }"
                 >
-                  <select class="custom-select" :class="{ 'is-invalid': submitted && $v.subject.$error }" id="default_select" v-model="subject">
+                  <select
+                    class="custom-select custom-select-lg  "
+                    :class="{ 'is-invalid': submitted && $v.subject.$error }"
+                    id="default_select"
+                    v-model="subject"
+                  >
                     <option value="" disabled selected hidden>Select...</option>
                     <option value="Work together">Work together</option>
                     <option value="Discuss a project">Discuss a project</option>
@@ -76,8 +82,8 @@
                     name="message"
                     id="name-field"
                     rows="4"
-                    class="form-control"
-                    :class="{ 'is-error': submitted && $v.message.$error }"
+                    class="form-control form-control-lg"
+                    :class="{ 'is-invalid': submitted && $v.message.$error }"
                   ></textarea>
                   <small
                     v-if="submitted && !$v.message.required"
@@ -85,22 +91,21 @@
                     >Please Enter your message</small
                   >
                 </div>
-                
+
                 <p class="text-muted">
                   <small
                     >Your personal details will be completely secured.</small
                   >
                 </p>
-                <button class="btn-primary btn px-4" type="submit">
+                <button class="btn-primary btn btn-lg px- col-md-6 col-xl-4" type="submit">
                   &nbsp; Send &nbsp;
                 </button>
               </form>
             </div>
             <!-- ./form-->
+          </div>
         </div>
-       </div>
       </div>
-    </div>
   </Layout>
 </template>
 

@@ -10,7 +10,7 @@
                 <g-link class="btn btn-warning px-4 mr-3" to="/contact"
                   >Say Hi</g-link
                 >
-                <g-link to="/about" class="btn btn-outline-primary">Learn More</g-link>
+                <g-link to="/about" class="btn btn-light">More</g-link>
             </div>
             <SocialLink />
           </div>

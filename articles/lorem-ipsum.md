@@ -4,7 +4,9 @@ title: About Typography
 author: Nichlas W. Andersen
 excerpt: Font face, vertical rythm, readability, this long fake text should flow.
 thumbnail: "/uploads/photo-1566576912321-d58ddd7a6088.jpg"
-category: games
+categories: 
+- other
+- games
 conclusion: a handgun and nine rounds of ammunition, and as he made his way down Shiga from the Chinese program’s thrust, a worrying impression of solid fluidity, as th
 
 ---

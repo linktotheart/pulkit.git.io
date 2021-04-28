@@ -38,6 +38,7 @@ $dark: #262525;
 }
 .lead{
     letter-spacing: 1px;
+    color: lighten($dark, 25);
 }
 .bg-primary{
     background: $primary !important;

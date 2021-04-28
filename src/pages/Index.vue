@@ -1,9 +1,10 @@
 <template>
   <Layout>
-    <Hero />
 
+    <Hero />
     <FeaturedPost :projects="$page.projects.edges" />
     <LatestArticles :articles="$page.articles.edges" />
+    
     <!-- <CallToAction /> -->
   </Layout>
 </template>

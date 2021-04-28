@@ -19,13 +19,13 @@
          
 
 
-          <g-link href="/contact" class="btn px-5 btn-lg btn-primary">Say Hello</g-link>
+            <g-link to="/contact" class="btn px-4 btn-outline-dark">Say Hello</g-link>
           </div>
         </div>
       </div>
 
-      <div class="border-top border-light  py-4   ">
-        <p class=" mb-0 text-muted text-center ">
+      <div class="border-top  py-4   ">
+        <p style="letter-spacing: 1px" class=" mb-0 small text-muted text-center ">
           Copyright 2021 | Coded by Pulkit Singh with ❤️ and Vue.
         </p>
       </div>

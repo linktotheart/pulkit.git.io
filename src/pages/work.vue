@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div>
+   
 
         <div class="page-title bg-secondary py-6">
           <div class="container mt-4">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
     <!-- <CallToAction /> -->
   </Layout>

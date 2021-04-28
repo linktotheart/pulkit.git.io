@@ -35,23 +35,16 @@
               <p class="mb-0 em font-style-italic">{{ $page.post.conclusion }}</p>
             </div>
           </div>
-          <div class="category">
-            <a
-              href="#"
-              class="nes-badge"
+          <div class="category pt-4 border-top">
+            <g-link
+              
+              class="btn btn-sm btn- bg-light"
               :key="cat.id"
               v-for="cat in $page.post.categories"
+              :to="cat.path"
             >
-              <span
-                :class="{
-                  'is-primary': $page.post.categories.indexOf(cat) == 0,
-                  'is-success': $page.post.categories.indexOf(cat) == 1,
-                  'is--error': $page.post.categories.indexOf(cat) == 2,
-                }"
-              >
-                {{ cat }}
-              </span>
-            </a>
+                {{ cat.title }}
+            </g-link>
           </div>
         </div>
       </div>
@@ -67,6 +60,11 @@ query articles ($path: String!) {
     timeToRead
     content
     categories
+    {
+      id
+      title
+      path
+    }
     path
     conclusion
     thumbnail

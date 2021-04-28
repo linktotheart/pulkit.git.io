@@ -2,7 +2,7 @@
 date: 2021-02-25T13:49:13Z
 title: Ajj ek ishq ki hawa hai
 categories:
-- other
+- games
 - new
 thumbnail: "/uploads/thank-you.jpg"
 excerpt: "new post is this a new file"

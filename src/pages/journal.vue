@@ -19,7 +19,7 @@
             >
               <div class="card mb-4 card-blog border-0 card-vertical">
               <g-link :to="item.node.path" class="card-img mb-3 d-block">
-                  <g-image class="thumbnail img-fluid" :src="item.node.thumbnail.src" />
+                  <g-image quality="50" background="gray" blur="12" class="thumbnail img-fluid" :src="item.node.thumbnail.src" />
               </g-link>
                 <g-link :to="item.node.path" class="card-title mb-3 h4 text-dark text-capitalize text-decoration-none">{{ item.node.title }}</g-link>
                 

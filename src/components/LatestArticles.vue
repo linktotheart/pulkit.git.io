@@ -7,7 +7,7 @@
      
         <div class="row ">
           <div class="col-lg-4" v-for="item in articles" :key="item.node.id">
-            <div class="card card-blog border-0 card-vertical">
+            <div class="card card-blog border-0 mb-4 card-vertical">
               <g-link :to="item.node.path" class="card-img mb-3 d-block">
                   <g-image class="thumbnail img-fluid" :src="item.node.thumbnail.src" />
               </g-link>

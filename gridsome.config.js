@@ -29,6 +29,12 @@ module.exports = {
         path: "articles/**/*.md",
         typeName: "Articles",
         resolveAbsolutePaths: true,
+        refs: {
+          categories: {
+            typeName: "Tag",
+            create: true,
+          },
+        },
         remark: {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"]
@@ -40,5 +46,13 @@ module.exports = {
     remark: {
       plugins: ["@gridsome/remark-prismjs"]
     }
+  },
+  templates: {
+    Tag: [
+      {
+        path: "/tags/:id",
+        component: "~/templates/Tag.vue",
+      },
+    ],
   }
 }

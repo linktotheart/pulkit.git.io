@@ -3,9 +3,9 @@
     <div class="project">
       <div class="container">
         <div class="container container-sm">
-          <div class="article-header">
+          <div class="article-header col-xl-9 mx-auto">
             <h1 class="article-title title" v-html="$page.post.title" />
-            <p class="lead">{{ $page.post.excerpt }}</p>
+            <p class="lead font-style-normal">{{ $page.post.excerpt }}</p>
           </div>
         </div>
 
@@ -35,16 +35,13 @@
           </div>
         </div>
 
-        <div class="container container-sm">
+        <div class="container p-0 pb-5 border-bottom container-sm">
           <article
             v-html="$page.post.content"
             class="article-content project-inner mb-5 mt-5"
           />
 
-          <g-link to="/work" class="nes-balloon from-left nes-pointer">
-            Liked? it <i class="nes-icon like mb-0"></i> <br />
-            See More
-          </g-link>
+         
         </div>
       </div>
     </div>
