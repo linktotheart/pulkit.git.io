@@ -29,15 +29,29 @@ main {
   .container {
     position: relative;
   }
-  .hero-title {
-    font-size: 3rem;
+  .inner .display-4 {
+    font-size: 3.333333rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    @include mediaq($md){
+      font-size: 2.666rem;
+    }
+  }
+  .btn-group{
+    display: block;
+    @include mediaq($lg){
+      text-align: center  ;
+    }
   }
   .social {
-    position: absolute;
-    bottom: -6rem;
-    left: 1rem;
+    display: flex;
+    @include mediaq($lg){
+      justify-content: center;
+    }
+    &:hover{
+      a{
+        opacity: .5;
+      }
+    }
     a{
       opacity: .7;
       transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -46,12 +60,21 @@ main {
       }
     }
     a:not(:last-child) {     
-      margin-right: 0.75rem;
+      margin-right: 0.85rem;
     }
   }
 }
 
 .projects {
+  .card-columns{
+    @include mediaq($lg){
+      column-count: 2;
+    }
+    @include mediaq($sm){
+      column-count: 1;
+    }
+  }
+
   .card{
     border: 0;
     overflow: hidden;

@@ -8,6 +8,9 @@
         <g-link class="card d-flex card-overlay text-center text-dark" :to="item.node.path" v-for="item in projects" :key="item.node.id">
               <span class="card-img">
                 <g-image
+                  width="250"
+                  quality="45"
+                  blur="15"
                   class="thumb img-fluid"
                   :src="item.node.thumbnail"
                   :alt="item.node.title"

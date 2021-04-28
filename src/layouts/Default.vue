@@ -1,11 +1,13 @@
 <template>
   <div class="wrapper">
     <Header />
-    <transition name="fade" appear>
+
+    <transition name="fade"  appear>
       <main>
         <slot />
       </main>
     </transition>
+    
     <!--footer-->
     <Footer />
   </div>

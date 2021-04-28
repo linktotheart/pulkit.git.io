@@ -1,6 +1,6 @@
 ---
 date: 2019-05-17
-title: About Typography
+title: Keep your face always toward the sunshine - and shadows will fall behind you.
 author: Nichlas W. Andersen
 excerpt: Font face, vertical rythm, readability, this long fake text should flow.
 thumbnail: "/uploads/photo-1566576912321-d58ddd7a6088.jpg"

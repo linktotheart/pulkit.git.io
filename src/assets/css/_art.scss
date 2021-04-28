@@ -7,9 +7,13 @@
          letter-spacing: 0px;
          margin-bottom: 1.1255rem;
          font-weight: 700;
+         line-height: 1.44;
+
+         @include mediaq($md){
+            font-size: 1.8989rem;
+         }
       }
       .lead{
-         color: #999;
          letter-spacing: 1px;
          font-style: italic;
          margin-bottom: 0;
@@ -17,7 +21,7 @@
    }
 
    .thumbnail{
-      width: 100%;
+
      img{
         max-width: 100%;
      }
@@ -39,6 +43,7 @@
 // markdown css github 
 .article-content{
    margin-bottom: 3rem;
+
    p{
       margin-bottom: 1.5rem;
       font-size: 1.025rem;
@@ -68,11 +73,33 @@
    img{
       margin-bottom: 1.5rem;
    }
+
    blockquote {
-      border-left: 8px solid #fafafa;
-      padding: 1rem;
+      border-left: 8px solid darken($primary, 5);
+      background-color: rgba($primary, .2);
+      padding: 1.777rem 1rem;
+      margin: 2.666rem auto;
+      position: relative;
+      &::after{
+         content: "";
+         width: 4rem;
+         height: 4rem;
+         right: 0;
+         opacity: .155;
+         top: -.25rem;
+         mix-blend-mode: color-burn;
+         position: absolute;
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
+         <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+       </svg>');
+      }
       & > p {
+         font-size: 1.25rem;
          margin-bottom: 0;
+         color: darken($accent, 45);
+
       }
    }
    
@@ -100,6 +127,8 @@
 
       & > .alert p{
          margin-bottom: 0;
+         font-size: 1.1025rem;
+         letter-spacing: 0px;
       }
    }
 

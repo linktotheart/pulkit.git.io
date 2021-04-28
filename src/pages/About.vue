@@ -7,9 +7,7 @@
             <div class=" text-center text-lg-left">
               <h1 class="text-dark font-weight-bolder">About Me</h1>
               <p class="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatum ullam repudiandae ipsa minima quaerat error, culpa aut
-                ex deleniti eligendi ducimus?
+                {{settings.about_header}}
               </p>
             </div>
           </div>
@@ -31,10 +29,7 @@
       <div class="container ">
         <article class="col-xl-9 mx-auto">
           <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            doloremque omnis animi, eligendi magni a voluptatum, vitae,
-            consequuntur rerum illum odit fugit assumenda rem dolores inventore
-            iste reprehenderit maxime! Iusto.
+            {{settings.about_me}}
           </p>
         </article>
       </div>
@@ -45,7 +40,12 @@
 <script>
 export default {
   metaInfo: {
-    title: "About",
+    title: "About Me",
+  },
+    data() {
+    return {
+      settings: require("../../data/theme.json"),
+    };
   },
 };
 </script>

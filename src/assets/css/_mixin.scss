@@ -39,6 +39,9 @@ $dark: #262525;
 .lead{
     letter-spacing: 1px;
     color: lighten($dark, 25);
+    @include mediaq($md){
+        font-size: 1.05rem;
+    }
 }
 .bg-primary{
     background: $primary !important;
