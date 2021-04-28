@@ -44,3 +44,5 @@ fields:
     max: 
     labelField: 
   label: columns
+pages:
+- articles/pulkit-singh-is-a-front-end-developer.md
