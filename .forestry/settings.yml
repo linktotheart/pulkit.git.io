@@ -22,7 +22,8 @@ sections:
   label: Settings
 - type: document
   path: data/theme.json
-  label: Site Setting
+  label: Site Settings
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
