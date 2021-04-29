@@ -5,8 +5,10 @@ categories:
 - other
 - new
 thumbnail: "/uploads/7.jpg"
-description: "<blockquote><p>Hi, why should this be a change</p></blockquote><p>Iilorem
-  lorem ipsum. </p><p>Noooo</p><p>Please kill him.</p><p></p>"
+description: |-
+  <blockquote><p>Hi, why should this be a change</p></blockquote><h3>Iilorem lorem ipsum.</h3><p>Noooo</p><p>Please kill him.</p><p></p><ol><li><p>none </p></li><li><p>to be taken</p></li><li><p>as offended</p></li></ol><p>Guys Actual Content </p><p></p><pre><code><code>fetch('<a href="https://api.github.com/users/hacktivist123/repos" title="https://api.github.com/users/hacktivist123/repos" target="_blank">https://api.github.com/users/hacktivist123/repos</a>')
+    .then(response =&gt; response.json())
+    .then(data =&gt; console.log(data));</code></code></pre><p></p><p></p>
 columns: []
 
 ---
