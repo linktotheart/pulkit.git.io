@@ -12,9 +12,6 @@ fields:
   name: date
   label: date
   default: now
-- type: list
-  name: categories
-  label: Tags
 - type: file
   name: thumbnail
   label: Project Thumbnail
@@ -34,5 +31,10 @@ fields:
     required: false
   label: Excerpt
   description: Seo, Description
+- name: categories
+  type: tag_list
+  default: []
+  label: Tags
+  description: Categories, Tools, tags
 pages:
 - projects/lal-lal-chunri-sitaron-wali.md
