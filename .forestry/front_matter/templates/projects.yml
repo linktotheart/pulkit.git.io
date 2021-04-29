@@ -36,5 +36,3 @@ fields:
   default: []
   label: Tags
   description: Categories, Tools, tags
-pages:
-- projects/lal-lal-chunri-sitaron-wali.md
