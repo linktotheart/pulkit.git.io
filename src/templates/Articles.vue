@@ -33,14 +33,7 @@
           <div class="col-xl-8 col-lg-9 col-md-11 mx-auto">
             <ArticleContent :content="$page.post.content" />
 
-            <div class="conclusion">
-              <div class="alert alert-primary">
-                <p><strong>Conclusion</strong></p>
-                <p class="mb-0 em font-style-italic">
-                  {{ $page.post.conclusion }}
-                </p>
-              </div>
-            </div>
+            
             <div class="category pt-4 border-top">
               <g-link
                 class="btn btn-sm btn- bg-light"
@@ -72,7 +65,6 @@ query articles ($path: String!) {
       path
     }
     path
-    conclusion
     thumbnail
   }
 }
