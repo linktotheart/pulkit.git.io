@@ -17,6 +17,7 @@
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {
+    "gridsome-plugin-purgecss": "^1.0.12",
     "node-sass": "^4.0.0",
     "sass-loader": "^7.3.1"
   }

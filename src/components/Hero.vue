@@ -18,9 +18,9 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mx-auto d-flex mb-4 mb-lg-0 align-items-center">
-          <picture class="d-flex bg-secondary rounded-circle ml-md-auto ml-auto mr-auto">
-            <g-image width="280" height="280" quality="10" class="m-n3" alt="Pulkit" src="~/assets/img/pulkit (1).png" />
-          </picture>
+          <div class="d-flex bg-secondary rounded-circle ml-md-auto ml-auto mr-auto">
+            <g-image width="280" height="250" fit="cover" quality="15" class="m-n3" alt="Pulkit" src="~/assets/img/pulkit (1).png" />
+          </div>
         </div>
       </div>          
     </div>
