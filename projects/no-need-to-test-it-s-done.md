@@ -1,17 +1,18 @@
 ---
-title: Ice Cream
-date: 2019-01-04
+date: 2021-04-29T08:37:43.000+00:00
 categories:
-- photography
-- yellow
-thumbnail: "/uploads/photo-1591462391994-cb7614f54aff.jpg"
+- 'vue '
+- new
+title: No need to test it's done
+thumbnail: "/uploads/8bb898d3a1901e07a83bca5b24f4b1d9.webp"
+content: "<p>PLease works this is my last hope </p>"
+excerpt: Vue (pronounced /vjuː/, like view) is a progressive framework for building
+  user interfaces.
 
 ---
 Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.
 
 > "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away." -Antoine de Saint-Exupery
-
-![](/uploads/photo-1591462391994-cb7614f54aff.jpg)
 
 Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.
 
