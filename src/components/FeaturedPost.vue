@@ -26,8 +26,8 @@
       </div>
        <div class="d-flex">
           <div class="mx-auto text-center col-lg-6 mt-4">
-              <g-link class="btn px-4 btn-info "> 
-                View All
+              <g-link to="/projects" class="btn px-4 btn-light "> 
+                View All 
               </g-link>
           </div>
         </div>

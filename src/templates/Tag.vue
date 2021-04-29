@@ -91,7 +91,7 @@ query ($id: ID!) {
         id
         title
         path
-        thumbnail
+        thumbnail (width: 320, quality: 30)
         date (format: "DD MMM YYYY")
         excerpt
         categories {

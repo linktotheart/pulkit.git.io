@@ -20,7 +20,11 @@
                   {{ `${item.node.excerpt.slice(0, 150)}...` }}
                   <br />
                 </p>
-                <g-link class="btn btn-clean " :to="item.node.path">Read More 
+                <g-link class="btn btn-clean " :to="item.node.path">
+                  <span class="sr-only">
+                    {{item.node.title}}
+                  </span>
+                  Read More 
 
                 <svg class="icon-arrow icon-arrow-right" width="25" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 1L24 5L20 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>

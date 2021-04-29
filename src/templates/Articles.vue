@@ -27,7 +27,6 @@
             <span>{{ $page.post.timeToRead }} min read</span>
           </div>
         </div>
-
         <!---  content start -->
         <div class="row">
           <div class="col-xl-8 col-lg-9 col-md-11 mx-auto">
@@ -58,15 +57,15 @@ query articles ($path: String!) {
     date (format: "DD, MMMM YY")
     timeToRead
     content
-    categories
     excerpt
+    categories
     {
       id
       title
       path
     }
     path
-    thumbnail
+    thumbnail (width: 720, quality: 50)
   }
 }
 </page-query>

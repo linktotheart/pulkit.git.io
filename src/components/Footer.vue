@@ -25,7 +25,7 @@
       </div>
 
       <div class="border-top  py-4   ">
-        <p style="letter-spacing: 1px" class=" mb-0 small text-muted text-center ">
+        <p style="letter-spacing: 1px" class=" mb-0 small text-body text-center ">
           Copyright 2021 | Coded by Pulkit Singh with ❤️ and Vue.
         </p>
       </div>

@@ -57,7 +57,7 @@ query projects ($path: String!) {
     date (format: "DD, MMM YYYY")
     content
     excerpt
-    thumbnail
+    thumbnail (width: 720, quality: 45)
     categories
     path
   }
