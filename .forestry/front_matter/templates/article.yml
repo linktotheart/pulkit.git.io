@@ -1,6 +1,6 @@
 ---
 label: Article
-hide_body: true
+hide_body: false
 display_field: title
 fields:
 - type: datetime
@@ -29,7 +29,7 @@ fields:
   default: ''
   config:
     required: true
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
   label: Description
