@@ -4,7 +4,7 @@ categories:
 - headless cms
 - jam stack
 title: What are Headless CMS? Why are they future of web development?
-thumbnail: ''
+thumbnail: "/uploads/newpiurpleasdasd14.jpg"
 excerpt: In this technical era, the winner is always the one who is faster, flexible
   and more stable or reliable.
 description: Headless CMS — a body without head
