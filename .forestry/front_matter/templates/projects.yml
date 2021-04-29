@@ -18,7 +18,7 @@ fields:
 - type: file
   name: thumbnail
   label: Project Thumbnail
-- name: description
+- name: content
   type: textarea
   default: ''
   config:
@@ -27,5 +27,6 @@ fields:
     schema:
       format: html-blocks
   label: Description
+  description: 'Content Goes Here '
 pages:
 - projects/lal-lal-chunri-sitaron-wali.md
