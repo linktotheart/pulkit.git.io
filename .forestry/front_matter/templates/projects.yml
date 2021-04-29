@@ -15,16 +15,6 @@ fields:
 - type: file
   name: thumbnail
   label: Project Thumbnail
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Description
-  description: 'Content Goes Here '
 - name: excerpt
   type: text
   config:
@@ -36,5 +26,15 @@ fields:
   default: []
   label: Tags
   description: Categories, Tools, tags
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+  description: 'Content Goes Here '
 pages:
 - projects/no-need-to-test-it-s-done.md
