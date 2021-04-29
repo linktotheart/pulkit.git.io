@@ -7,7 +7,7 @@
             <div class="article-header">
               <h1 v-html="$page.post.title" class="article-title" />
               <p class="lead text-muted">
-                {{ $page.post.title }}
+                {{ $page.post.excerpt }}
               </p>
             </div>
           </div>
@@ -59,6 +59,7 @@ query articles ($path: String!) {
     timeToRead
     content
     categories
+    excerpt
     {
       id
       title

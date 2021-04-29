@@ -7,7 +7,6 @@ categories:
 - other
 - games
 - vue
-conclusion: a handgun and nine rounds of ammunition, and as he made his way down Shiga from the Chinese program’s thrust, a worrying impression of solid fluidity, as th
 ---
 
 ![](/uploads/photo-1551103782-8ab07afd45c1.jpg)
