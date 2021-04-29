@@ -5,6 +5,7 @@ categories:
 - photography
 - yellow
 thumbnail: "/uploads/pixel.jpg"
+excerpt: "LOL LOL LOL LOL "
 ---
 ![](/uploads/pixel.jpg)
 lorem ipdum

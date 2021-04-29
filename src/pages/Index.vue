@@ -16,7 +16,7 @@ query {
       node{
         id
         title
-        thumbnail (width:320, quality: 45)
+        thumbnail (width:420, quality: 45)
         path
         categories
       }
@@ -27,7 +27,7 @@ query {
       node {
         id
         title
-        thumbnail (width:320, quality: 55)
+        thumbnail (width:380, quality: 65)
         excerpt
         date (format: "DD MMM YYYY")
         path

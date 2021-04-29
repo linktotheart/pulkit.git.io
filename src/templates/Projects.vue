@@ -12,7 +12,7 @@
         </div>
 
         <div class="thumbnail mx-n2">
-          <g-image width="650" quality="35" :alt="$page.post.title" :src="$page.post.thumbnail.src" />
+          <g-image class="mw-100" fill="contain" :alt="$page.post.title" :src="$page.post.thumbnail.src" />
         </div>
 
         <div class="article-meta">
@@ -57,7 +57,7 @@ query projects ($path: String!) {
     date (format: "DD, MMM YYYY")
     content
     excerpt
-    thumbnail (width: 720, quality: 45)
+    thumbnail (quality: 75)
     categories
     path
   }
