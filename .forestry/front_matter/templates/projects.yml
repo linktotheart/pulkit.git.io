@@ -28,5 +28,11 @@ fields:
       format: html-blocks
   label: Description
   description: 'Content Goes Here '
+- name: excerpt
+  type: text
+  config:
+    required: false
+  label: Excerpt
+  description: Seo, Description
 pages:
 - projects/lal-lal-chunri-sitaron-wali.md
