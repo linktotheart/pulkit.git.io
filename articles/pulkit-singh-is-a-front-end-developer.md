@@ -9,12 +9,8 @@ categories:
 - Cut
 
 ---
-<<<<<<< HEAD
-
-=======
 you have been warned!
 
 New mega man game just arrived hope it will show you some content! 
 
 > Love my life the way it works 
->>>>>>> 84c2d1eaca0930f795bcdbf8482b6bf5df9709e8

@@ -5,5 +5,6 @@ categories:
 - photography
 - yellow
 thumbnail: "/uploads/ian-dooley-281897-unsplash.jpg"
+excerpt: "New file just created"
 ---
 ![](/uploads/ian-dooley-281897-unsplash.jpg)

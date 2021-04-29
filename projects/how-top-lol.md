@@ -5,7 +5,9 @@ categories:
 - photography
 - yellow
 thumbnail: "/uploads/pixel.jpg"
+excerpt: "Test excerpt" 
 ---
 ![](/uploads/pixel.jpg)
+
 lorem ipdum
 ##Hi this is test title
