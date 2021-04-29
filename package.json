@@ -12,6 +12,7 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "eslint-plugin-gridsome": "^1.6.1",
     "gridsome": "^0.7.23",
+    "postcss": "^8.2.13",
     "vee-validate": "^4.1.18",
     "vue-icon": "^2.2.0",
     "vuelidate": "^0.7.6"
