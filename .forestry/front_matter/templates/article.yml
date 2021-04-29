@@ -7,15 +7,16 @@ fields:
   name: date
   label: date
   default: now
+  config:
+    required: true
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: file
   name: thumbnail
-  label: Thumbnail
-- type: text
-  name: author
-  label: author
+  label: Project Thumbnail
 - type: text
   name: excerpt
   label: excerpt
@@ -23,5 +24,15 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Content Goes Here
 pages:
 - articles/pulkit-singh-is-a-front-end-developer.md
