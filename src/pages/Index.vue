@@ -46,13 +46,15 @@ import LatestArticles from "@/components/LatestArticles";
 export default {
   metaInfo: {
     title: "Welcome",
-    content: "John Doe",
+    content: "Pulkit Singh | Personal Blog | Technical Creative",
+    
   },
   components: {
     Hero,
     FeaturedPost,
     LatestArticles,
   },
+  
 };
 </script>
 

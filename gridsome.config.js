@@ -9,21 +9,8 @@ module.exports = {
   siteUrl: `localhost`,
   host: "0.0.0.0",
   titleTemplate: "%s - Pulkit Singh",
-  siteDescription: "Creative technologist",
+  siteDescription: "Creative technologist | Technical Blog  ",
   plugins: [
-    {
-      use: 'gridsome-plugin-purgecss',
-      // default options, the following will be included if you don't provide anything
-      options: {
-        content: [
-          './src/**/*.vue',
-          './src/**/*.md'
-        ],
-        css: ['./src/**/*.css','./src/**/*.scss'],
-        defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-        safelist: ['random', 'yep', 'button', /^nav-/]
-      }
-    },
     {
       use: "@gridsome/source-filesystem",
       options: {
@@ -54,6 +41,9 @@ module.exports = {
         }
       }
     },
+    {
+      use: 'gridsome-plugin-seo'
+    }
   ],
   transformers: {
     remark: {
@@ -67,5 +57,6 @@ module.exports = {
         component: "~/templates/Tag.vue",
       },
     ],
-  }
+  },
+  
 }
