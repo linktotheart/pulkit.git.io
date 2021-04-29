@@ -19,9 +19,6 @@ fields:
 - type: text
   name: excerpt
   label: excerpt
-- type: text
-  name: category
-  label: category
 - name: categories
   type: tag_list
   default: []
