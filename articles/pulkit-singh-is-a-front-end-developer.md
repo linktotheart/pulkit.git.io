@@ -1,5 +1,5 @@
 ---
-date: 2021-04-28T19:22:11Z
+date: 2021-04-28T19:22:11.000+00:00
 title: Pulkit Singh is a front end developer
 thumbnail: "/uploads/photo-1550745165-9bc0b252726f.jpg"
 author: ''
@@ -9,4 +9,12 @@ categories:
 - Cut
 
 ---
+<<<<<<< HEAD
 
+=======
+you have been warned!
+
+New mega man game just arrived hope it will show you some content! 
+
+> Love my life the way it works 
+>>>>>>> 84c2d1eaca0930f795bcdbf8482b6bf5df9709e8
