@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div class="contact">
-        <div class="page-header py-6" style="background: #ffcbcb">
+        <div class="page-title py-6" style="background: #ffcbcb">
           <div class="container">
             <div class="col-xl-9 col-lg-10 mx-auto">
-              <h1 class="title display-4 mb-3">Contact</h1>
+              <h1 class="title  display-4 mb-3">Contact Me</h1>
               <p class="detail lead mb-0">
                 {{ settings.contact_text }}
               </p>

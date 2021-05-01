@@ -13,11 +13,11 @@
           </div>
         </div>
 
-        <div class="thumbnail mx-n2">
+        <div class="thumbnail">
           <g-image :src="$page.post.thumbnail.src" :alt="$page.post.title" />
         </div>
 
-        <div class="article-meta">
+        <div class="article-meta px-2">
           <div class="article-date">
             <span class="label">Posted &nbsp; </span>
             <span v-text="$page.post.date" />
@@ -40,7 +40,7 @@
                 v-for="cat in $page.post.categories"
                 :to="cat.path"
               >
-                {{ cat.title }}
+                #{{ cat.title }}
               </g-link>
             </div>
           </div>
@@ -65,7 +65,7 @@ query articles ($path: String!) {
       path
     }
     path
-    thumbnail (width: 720, quality: 50)
+    thumbnail (width: 1200, quality: 80)
   }
 }
 </page-query>

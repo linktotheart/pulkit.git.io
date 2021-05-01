@@ -11,8 +11,8 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-5 px-4 px-lg-3">
-            <g-image class="img-fluid mb-4 mb-lg-0 rounded-circle shadow border" alt="Pulkit Singh " src="~/assets/img/pulkit.png"> </g-image>
+          <div class="col-lg-5 px-4 px-lg-3 d-flex justify-content-center">
+            <g-image width="360" class="img-fluid mb-4 mb-lg-0 rounded- shadow-sm border" alt="Pulkit Singh " src="~/assets/img/pulkit.png"> </g-image>
           </div>
         </div>
       </div>
