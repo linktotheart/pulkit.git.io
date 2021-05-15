@@ -26,5 +26,3 @@ fields:
   default: []
   label: Tags
   description: Categories, Tools, tags
-pages:
-- projects/pulkit-singh-latest.md
