@@ -26,3 +26,5 @@ fields:
   default: []
   label: Tags
   description: Categories, Tools, tags
+pages:
+- projects/coffee-with-me-cta.md
