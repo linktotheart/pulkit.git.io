@@ -18,7 +18,7 @@
       <div class="container mt-n5">
         <div class="thumbnail">
           <g-image
-            class="mw-100"
+            class="img-fluid"
             fill="cover"
             :alt="$page.post.title"
             :src="$page.post.thumbnail.src"

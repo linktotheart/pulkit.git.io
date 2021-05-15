@@ -21,8 +21,10 @@
    }
 
    .thumbnail{
-
+      min-height: 15rem;
+      background: #e6e6e6;
      img{
+        width: 100%;
         max-width: 100%;
      }
    }
