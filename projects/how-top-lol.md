@@ -5,7 +5,7 @@ categories:
 - photography
 - yellow
 thumbnail: "/uploads/pixel.jpg"
-excerpt: "Test excerpt" 
+excerpt: "Test excerpt"  
 ---
 ![](/uploads/pixel.jpg)
 
