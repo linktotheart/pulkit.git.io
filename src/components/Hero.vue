@@ -4,6 +4,7 @@
       <div class="row flex-column-reverse flex-lg-row align-items-center">
         <div class="col-lg-8">
           <div class="inner mt-4  ">
+            <span class="text-muted text-center text-lg-left d-block ls-1 font-weight-bold">Hey!</span>
             <h1 class="display-4  text-center text-lg-left text-capitalize font-weight-bold" v-html="settings.hero_title" />
             <p class="lead text-center text-lg-left mb-0" v-html="settings.hero_subtitle" />
             <div class="btn-group mt-4 ">

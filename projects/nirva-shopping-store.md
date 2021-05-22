@@ -8,7 +8,9 @@ title: Nirva - shopping store
 thumbnail: "/uploads/nivatheme.jpg"
 excerpt: Nirva is a modern, clean and minimalistic e-commerce theme. The base here
   is online clothing store.
-
+github_link: ""
+live_link: ""
+client: "Samsung"
 ---
 ### Theme Introduction
 

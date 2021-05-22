@@ -3,9 +3,9 @@
     <div class="container">
       <h2 class="section-title h1 mb-4 font-weight-bold">Selected Works 🔥 </h2>
 
-      <div class="card-columns">
+      <div class="row row-cols-1  row-cols-lg-3 row-cols-md-2 mx-0">
 
-        <g-link class="card d-flex card-overlay text-center text-dark" :to="item.node.path" v-for="item in projects" :key="item.node.id">
+        <g-link class="card d-flex card-overlay mb-0 text-center text-dark" :to="item.node.path" v-for="item in projects" :key="item.node.id">
               <span class="card-img">
                 <g-image
                   width="250"

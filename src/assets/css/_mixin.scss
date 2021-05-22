@@ -1,3 +1,8 @@
+// $primary: #75d5fd;
+// $secondary: #c98efa;
+// $accent: #ff2281;
+// $dark: #26262c;
+
 $primary: #fff6da;
 $secondary: #84f2d6;
 $accent: #fc6b3f;
@@ -14,7 +19,7 @@ $dark: #262525;
 
   ::selection {
     color: #fff;
-    background: lighten($accent, 5) ;
+    background: darken($accent, 5) ;
 }
 
 @mixin mediaq($xy) {
@@ -38,7 +43,7 @@ $dark: #262525;
 }
 .lead{
     letter-spacing: 1px;
-    color: lighten($dark, 25);
+    color: lighten($dark, 15);
     @include mediaq($md){
         font-size: 1.05rem;
     }
@@ -47,7 +52,7 @@ $dark: #262525;
     background: $primary !important;
 }
 .bg-secondary{
-    background: $secondary !important;
+    background: lighten($secondary, 15%) !important;
 }
 .bg-dark{
     background: $dark;
@@ -56,3 +61,6 @@ $dark: #262525;
     background-color: $accent !important;
 }
 
+.ls-1{
+    letter-spacing: 2px;
+}

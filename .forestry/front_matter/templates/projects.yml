@@ -15,6 +15,15 @@ fields:
 - type: file
   name: thumbnail
   label: Project Thumbnail
+- type: text
+  name: client
+  label: Client name
+- type: text
+  name: github_link
+  label: Github Link
+- type: text
+  name: live_link
+  label: Live Demo Link
 - name: excerpt
   type: text
   config:

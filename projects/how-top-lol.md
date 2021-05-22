@@ -5,7 +5,11 @@ categories:
 - photography
 - yellow
 thumbnail: "/uploads/pixel.jpg"
-excerpt: "Test excerpt"  
+excerpt: "Test excerpt" 
+github_link: ""
+live_link: ""
+client: "Samsung"
+
 ---
 ![](/uploads/pixel.jpg)
 

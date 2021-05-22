@@ -7,7 +7,7 @@
          letter-spacing: 0px;
          margin-bottom: 1.1255rem;
          font-weight: 700;
-         line-height: 1.44;
+         line-height: 1.2222;
 
          @include mediaq($md){
             font-size: 1.8989rem;
@@ -23,6 +23,7 @@
    .thumbnail{
       min-height: 15rem;
       background: #e6e6e6;
+      margin: 0 -15px;
      img{
         width: 100%;
         max-width: 100%;
@@ -35,7 +36,7 @@
       margin-bottom: 3rem;
       padding-bottom: 1rem;
       font-size: .95rem;
-      letter-spacing: 1px;
+      letter-spacing: .75px;
       border-bottom: 3px solid #eee;
       color: #999;
       padding-top: 1rem;
@@ -45,11 +46,11 @@
 // markdown css github 
 .article-content{
    margin-bottom: 3rem;
-
+   padding: 0 .5rem;
    p{
       margin-bottom: 1.5rem;
       font-size: 1.025rem;
-      color: $dark; line-height: 1.7; letter-spacing: 1px;
+      color: $dark; line-height: 1.66; letter-spacing: 1px;
       > img {
          margin-bottom: 0;
       }
@@ -61,6 +62,7 @@
       // }
 }
    h1{
+      font-size: 2.1111rem;
       margin-bottom: 1.5rem;
    }
    h1,
