@@ -50,7 +50,7 @@
             <g-link to="/work" class="nav-link">Work</g-link>
           </li>
           <li class="nav-item mr-md-3">
-            <g-link to="/journal" class="nav-link">Journal</g-link>
+            <g-link to="/articles" class="nav-link">Articles</g-link>
           </li>
           <li class="nav-item">
             <g-link to="/about" class="nav-link">About</g-link>

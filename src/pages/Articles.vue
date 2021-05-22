@@ -2,7 +2,7 @@
   <Layout>
         <div class="page-title bg-secondary py-6">
           <div class="container mt-4">
-              <h1 class="text-dark font-weight-bolder"> Journals</h1>
+              <h1 class="text-dark font-weight-bolder"> Articles </h1>
               <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ullam repudiandae ipsa minima quaerat error, culpa aut ex deleniti eligendi ducimus? </p>
           </div>
         </div>
@@ -26,7 +26,7 @@
                 <span class="card-date">{{ item.node.date }}</span>
              
                 <p class="card-text mb-3">
-                  {{ `${item.node.excerpt.slice(0, 150)}...` }}
+                  {{ `${item.node.excerpt.slice(0, 180)}...` }}
                   <br />
                 </p>
                 <g-link class="btn btn-clean " :to="item.node.path">Read More 
