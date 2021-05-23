@@ -16,7 +16,7 @@ fields:
     required: true
 - type: file
   name: thumbnail
-  label: Project Thumbnail
+  label: Blog Thumbnail
 - type: text
   name: excerpt
   label: excerpt
