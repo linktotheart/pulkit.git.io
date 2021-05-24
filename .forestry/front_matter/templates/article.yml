@@ -25,4 +25,5 @@ fields:
   default: []
   label: Tags
 pages:
+- articles/first-look-at-gridsome-vue.js-on-steroids.md
 - articles/what-are-headless-cms-why-are-they-future-of-web-development.md
