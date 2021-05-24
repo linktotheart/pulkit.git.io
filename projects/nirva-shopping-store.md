@@ -8,21 +8,24 @@ title: Nirva - shopping store
 thumbnail: "/uploads/nivatheme.jpg"
 excerpt: Nirva is a modern, clean and minimalistic e-commerce theme. The base here
   is online clothing store.
-github_link: ""
-live_link: ""
-client: "Samsung"
+client: ''
+github_link: https://github.com/linktotheart/nirva-ecommerce-template
+live_link: ''
+
 ---
 ### Theme Introduction
 
 Nirva is a modern, clean and minimalistic e-commerce theme. The base here is online clothing store.
 
-    The name Nirva is inspired by Nirvana for it's cleanness.
+> ##### _The name Nirva is inspired by Nirvana for it's cleanness._
 
 **Nirva** contains a variety of pre-made pages, components, and options that will help you to kick start your project’s development.
 
 > "Design adds value faster than it adds costs." - Joel Spolsky
 
-**Features**
+***
+
+### Features
 
 * Built with **HTML, CSS, Jquery**, and the latest **Bootstrap 4.5.3**
 * 100% responsive
@@ -36,6 +39,6 @@ Nirva is a modern, clean and minimalistic e-commerce theme. The base here is onl
 * A complete development workflow included
 * Well commented and organised
 
-<a class="btn btn-primary mr-3" href="https://github.com/linktotheart/nirva-ecommerce-template">View On Github </a>
+***
 
-<a class="btn btn-info" href="https://github.com/linktotheart/nirva-ecommerce-template">Live Demo  </a>
+### Screenshots

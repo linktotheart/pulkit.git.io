@@ -16,7 +16,7 @@ fields:
     required: true
 - type: file
   name: thumbnail
-  label: Project Thumbnail
+  label: Blog Thumbnail
 - type: text
   name: excerpt
   label: excerpt
@@ -25,5 +25,5 @@ fields:
   default: []
   label: Tags
 pages:
-- articles/pulkit-singh-is-a-front-end-developer.md
+- articles/first-look-at-gridsome-vue.js-on-steroids.md
 - articles/what-are-headless-cms-why-are-they-future-of-web-development.md
