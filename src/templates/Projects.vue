@@ -107,9 +107,9 @@ query projects ($path: String!) {
 export default {
 	metaInfo() {
 		return {
-			title: this.$page.post.title,
-			name: this.$page.post.excerpt,
-			description: this.$page.post.excerpt
+			title: this.$page.post.title + "Pulkit ",
+			name: this.$page.post.excerpt  + "Pulkit ",
+			description: this.$page.post.excerpt  + "Pulkit ",
 		};
 	}
 };
