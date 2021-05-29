@@ -6,6 +6,9 @@
 > 3. Forestry.io
 > 4. Gridsome
 
+# Pulkit's Journal [![Netlify Status](https://api.netlify.com/api/v1/badges/f96a24bf-8d6f-4cfe-9e54-6fb317b1954a/deploy-status)](https://app.netlify.com/sites/ultraviolent/deploys)
+
+> Built using latest Gridsome VueJS and Sass
 
 ### 1. How to use this template?
 
