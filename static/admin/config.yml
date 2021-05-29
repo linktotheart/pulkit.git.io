@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: linktotheart/pulkit.git.io # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
   site_domain: localhost
 media_folder: "uploads" # Media files will be stored in the repo under images/uploads
