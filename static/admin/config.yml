@@ -67,8 +67,8 @@ collections:
             required: true
             hint: Header Title
           - widget: string
-            name: footer_title
-            label: Footer title 
+            name: hero_subtitle
+            label: Hero title 
             required: true
             hint: Header Title
           - widget: markdown
