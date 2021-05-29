@@ -5,11 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Pulkit Journal",
+  siteName: "Pulkit Singh | Portfolio | Journal | Blog ",
   siteUrl: `https://ultraviolent.netlify.app`,
   host: "0.0.0.0",
   titleTemplate: "%s - Pulkit Singh",
-  siteDescription: "Creative Blog about Vue, JavaScript, technologies and programming in general. | Technical Blog  ",
+  siteDescription: "Creative Blog about Vue, JavaScript, technologies and programming in general. | Technical Blog  | Work Portfolio",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
@@ -41,6 +41,7 @@ module.exports = {
         }
       }
     },
+    
     {
       use: 'gridsome-plugin-feed',
       options: {
@@ -91,7 +92,10 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-seo'
-    }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`
+    },
   ],
   transformers: {
     remark: {

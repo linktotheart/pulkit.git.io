@@ -14,7 +14,7 @@ description: Headless CMS — a body without head
 
 The logic of traditional CMS combines the back-end and front-end parts of one system. In this case, the content turns out to be associated with specific technologies, architecture and patterns of the client-server application.
 
-Headless CMS is a fundamentally different management system. Typically, it is only responsible for generic content that can be used on all platforms. The backend *__body)*__with this approach is not associated with the frontend **(“head”)**.
+Headless CMS is a fundamentally different management system. Typically, it is only responsible for generic content that can be used on all platforms. The backend *body* _with this approach is not associated with the frontend **(“head”)**.
 
 The logic of Headless CMS is such that different heads can be attached to the “body” if necessary. This allows you to use a single backend to manage a site (or sites) and a mobile application, as well as automate the distribution of content across all available sites and devices.
 
@@ -41,7 +41,7 @@ Source : [https://villevuorinen.com/](https://villevuorinen.com/ "https://villev
 3. Content is easily transferable to new interfaces. For example, to implement an application for iOS, if there are web and Android versions, it is not required to create a new backend — one more client application is simply added to the existing scheme.
 4. At the same time, developers in any programming language (Ruby, PHP, Java, Swift) can use the API when manipulating the system, thus solving the problem of incompatibility of different languages ​​in one product. This makes it possible to use the latest technology and be creative in the development process.
 
-<div class="alert alert-warning">Headless CMS is characterized by increased security. Since only statically generated files are available from the user side, and request processing is greatly simplified, this process is more difficult to “break” and the risks of attacks are reduced.</p>
+<div class="alert alert-warning">Headless CMS is characterized by increased security. Since only statically generated files are available from the user side, and request processing is greatly simplified, this process is more difficult to “break” and the risks of attacks are reduced.</div>
 
 ![](/uploads/665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png)
 

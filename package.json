@@ -13,9 +13,7 @@
     "eslint-plugin-gridsome": "^1.6.1",
     "gridsome": "^0.7.23",
     "gridsome-plugin-feed": "^1.0.2",
-    "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-seo": "^1.0.1",
-    "netlify-cms": "^2.10.131",
     "vee-validate": "^4.1.18",
     "vue-icon": "^2.2.0",
     "vuelidate": "^0.7.6"
@@ -23,6 +21,5 @@
   "devDependencies": {
     "node-sass": "^4.0.0",
     "sass-loader": "^7.3.1",
-    "postcss-loader": "^4.0.3"
   }
 }

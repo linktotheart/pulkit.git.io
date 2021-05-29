@@ -1,0 +1,90 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  site_domain: localhost
+media_folder: "uploads" # Media files will be stored in the repo under images/uploads
+localbackend: true
+collections:
+  - name: "articles" # Used in routes, e.g., /admin/collections/blog
+    label: "Blogs" # Used in the UI
+    folder: "articles/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    extension: md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Blog Title", name: "title", widget: "string"}
+      - {label: "Blog Description", name: "excerpt", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", default: ''}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Tags", name: "categories", widget: "list"}
+      - {label: "Body", name: "content", widget: "markdown"}
+  - name: "work" # Used in routes, e.g., /admin/collections/blog
+    label: "Blogs" # Used in the UI
+    folder: "projects/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    extension: md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Project Title", name: "title", widget: "string"}
+      - {label: "Project Description", name: "excerpt", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", default: ''}
+      - {label: "Client Title", name: "client", widget: "string"}
+      - {label: "Github Link", name: "github_link", widget: "string"}
+      - {label: "Live Link", name: "live_link", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Tags", name: "categories", widget: "list"}
+      - {label: "Body", name: "content", widget: "markdown"}
+  - name: config
+    label: Site Configuration
+    files:
+      - name: config
+          label: Site Configuration
+          file: data/theme.json
+          fields:
+            - widget: string
+              name: site_name
+              label: Title
+              required: true
+              hint: Site Name
+            - widget: string
+              name: site_description
+              label: Title
+              required: true
+              hint: Site Name
+            - widget: string
+              name: hero_title
+              label: Title
+              required: true
+              hint: Hero Title
+            - widget: string
+              name: header_title
+              label: Title
+              required: true
+              hint: Header Title
+            - widget: string
+              name: footer_title
+              label: Footer Title
+              required: true
+              hint: Header Title
+            - widget: string
+              name: footer_title
+              label: Footer title 
+              required: true
+              hint: Header Title
+            - widget: markdown
+              name: about_header
+              label: About Header 
+              required: true
+              hint: Header Title
+            - widget: markdown
+              name: about_me
+              label: About Me  
+              required: true
+              hint: About Title
+            - widget: markdown
+              name: cta_body
+              label: CTA Body text  
+              required: true
+              hint: CTA About Title
+
+      
