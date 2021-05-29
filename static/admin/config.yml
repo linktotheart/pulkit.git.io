@@ -38,53 +38,53 @@ collections:
     label: Site Configuration
     files:
       - name: config
-          label: Site Configuration
-          file: data/theme.json
-          fields:
-            - widget: string
-              name: site_name
-              label: Title
-              required: true
-              hint: Site Name
-            - widget: string
-              name: site_description
-              label: Title
-              required: true
-              hint: Site Name
-            - widget: string
-              name: hero_title
-              label: Title
-              required: true
-              hint: Hero Title
-            - widget: string
-              name: header_title
-              label: Title
-              required: true
-              hint: Header Title
-            - widget: string
-              name: footer_title
-              label: Footer Title
-              required: true
-              hint: Header Title
-            - widget: string
-              name: footer_title
-              label: Footer title 
-              required: true
-              hint: Header Title
-            - widget: markdown
-              name: about_header
-              label: About Header 
-              required: true
-              hint: Header Title
-            - widget: markdown
-              name: about_me
-              label: About Me  
-              required: true
-              hint: About Title
-            - widget: markdown
-              name: cta_body
-              label: CTA Body text  
-              required: true
-              hint: CTA About Title
+        label: Site Configuration
+        file: data/theme.json
+        fields:
+          - widget: string
+            name: site_name
+            label: Title
+            required: true
+            hint: Site Name
+          - widget: string
+            name: site_description
+            label: Title
+            required: true
+            hint: Site Name
+          - widget: string
+            name: hero_title
+            label: Title
+            required: true
+            hint: Hero Title
+          - widget: string
+            name: header_title
+            label: Title
+            required: true
+            hint: Header Title
+          - widget: string
+            name: footer_title
+            label: Footer Title
+            required: true
+            hint: Header Title
+          - widget: string
+            name: footer_title
+            label: Footer title 
+            required: true
+            hint: Header Title
+          - widget: markdown
+            name: about_header
+            label: About Header 
+            required: true
+            hint: Header Title
+          - widget: markdown
+            name: about_me
+            label: About Me  
+            required: true
+            hint: About Title
+          - widget: markdown
+            name: cta_body
+            label: CTA Body text  
+            required: true
+            hint: CTA About Title
 
       
