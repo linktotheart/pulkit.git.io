@@ -1,12 +1,12 @@
-// $primary: #75d5fd;
-// $secondary: #c98efa;
-// $accent: #ff2281;
-// $dark: #26262c;
-
 $primary: #fff6da;
 $secondary: #84f2d6;
 $accent: #fc6b3f;
 $dark: #262525;
+
+// $primary: #fff6da;
+// $secondary: #84f2d6;
+// $accent: #fc6b3f;
+// $dark: #262525;
  /////////// device width and screensize ////////////////
   // Small screen / phone
   $sm: 576px;
@@ -52,10 +52,13 @@ $dark: #262525;
     background: $primary !important;
 }
 .bg-secondary{
-    background: lighten($secondary, 15%) !important;
+    background: ($secondary) !important;
 }
 .bg-dark{
     background: $dark;
+}
+.text-dark{
+    color: $dark;
 }
 .bg-danger{
     background-color: $accent !important;
@@ -63,4 +66,12 @@ $dark: #262525;
 
 .ls-1{
     letter-spacing: 2px;
+}
+
+.btn-danger{
+    background: $accent;
+    border-color: $accent;
+    &:hover{
+        background-color: darken($accent, $amount: 15);
+    }
 }
