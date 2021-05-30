@@ -94,7 +94,11 @@ module.exports = {
       use: 'gridsome-plugin-seo'
     },
     {
-      use: `gridsome-plugin-netlify-cms`
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`,
+        modulePath: `src/admin/index.js`
+      }
     },
   ],
   transformers: {
