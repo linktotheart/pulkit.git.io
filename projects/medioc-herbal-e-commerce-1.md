@@ -1,6 +1,8 @@
 ---
 date: 2021-05-30T16:51:20Z
-categories: []
+categories:
+- sass
+- bootstrap
 title: Medioc - Herbal E-commerce
 thumbnail: "/uploads/yellow-and-pink-beauty-and-fashion-blog-banner.jpg"
 excerpt: " Online E-commerce platform, buy herbal medicine online."
