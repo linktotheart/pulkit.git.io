@@ -1,9 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
   repo: linktotheart/pulkit.git.io # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
-  site_domain: localhost
+  site_domain: https://ultraviolent.netlify.app
 media_folder: "uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "uploads"
 localbackend: true
 collections:
   - name: "articles" # Used in routes, e.g., /admin/collections/blog
