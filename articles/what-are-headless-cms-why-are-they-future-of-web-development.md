@@ -4,7 +4,7 @@ categories:
 - headless cms
 - jam stack
 title: What are Headless CMS? Why are they future of web development?
-thumbnail: "/uploads/05-fade.jpg"
+thumbnail: "/uploads/celebrate-canva-banner.png"
 excerpt: In this technical era, the winner is always the one who is faster, flexible
   and more stable or reliable.
 description: Headless CMS — a body without head
@@ -14,7 +14,7 @@ description: Headless CMS — a body without head
 
 The logic of traditional CMS combines the back-end and front-end parts of one system. In this case, the content turns out to be associated with specific technologies, architecture and patterns of the client-server application.
 
-Headless CMS is a fundamentally different management system. Typically, it is only responsible for generic content that can be used on all platforms. The backend __**ody_** th_is approach is not associated with the frontend **(“head”)**.
+Headless CMS is a fundamentally different management system. Typically, it is only responsible for generic content that can be used on all platforms. The backend approach is not associated with the frontend **(“head”)**.
 
 The logic of Headless CMS is such that different heads can be attached to the “body” if necessary. This allows you to use a single backend to manage a site (or sites) and a mobile application, as well as automate the distribution of content across all available sites and devices.
 
@@ -53,10 +53,10 @@ All such CMS are presented at [**headlesscms.org**](http://headlesscms.org/). Mo
 
 > Headless CMS can involve self-deployment on a server or upload to a CDN service. Some systems work through cloud providers. Many people support creating a model and then filling it with content. Another selection criterion: using GraphQL or REST API (or both in one product).
 
+#### Headless CMS — Why the future belongs to that?
+
+The innovative approach implemented in Headless CMS takes into account the realities of today when time dictates the fastest possible introduction of new technologies and the expansion of digital channels of interaction with the audience. The principle of separation of the content itself and the client interface allows you to accelerate development and scale with resource savings. And managing different platforms becomes more convenient and efficient.
+
 ### Conclusion
 
 With the further development of digital products, Headless CMS is likely to be more preferred over traditional _WordPress_ or _Joomla_. There is every reason to believe that the future belongs to the “**headless**” systems.
-
-#### Headless CM — Why the future belongs to that
-
-The innovative approach implemented in Headless CMS takes into account the realities of today when time dictates the fastest possible introduction of new technologies and the expansion of digital channels of interaction with the audience. The principle of separation of the content itself and the client interface allows you to accelerate development and scale with resource savings. And managing different platforms becomes more convenient and efficient.
