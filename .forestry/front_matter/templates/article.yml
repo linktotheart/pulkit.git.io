@@ -1,0 +1,29 @@
+---
+label: Article
+hide_body: false
+display_field: title
+fields:
+- type: datetime
+  name: date
+  label: date
+  default: now
+  config:
+    required: true
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: file
+  name: thumbnail
+  label: Blog Thumbnail
+- type: text
+  name: excerpt
+  label: excerpt
+- name: categories
+  type: tag_list
+  default: []
+  label: Tags
+pages:
+- articles/first-look-at-gridsome-vue.js-on-steroids.md
+- articles/what-are-headless-cms-why-are-they-future-of-web-development.md

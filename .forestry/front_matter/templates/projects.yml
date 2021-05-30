@@ -1,0 +1,48 @@
+---
+label: Projects
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Project Title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: date
+  default: now
+- type: file
+  name: thumbnail
+  label: Project Thumbnail
+- name: excerpt
+  type: text
+  config:
+    required: false
+  label: Excerpt
+  description: Seo, Description
+- name: client
+  type: text
+  config:
+    required: false
+  label: Client Name
+- name: github_link
+  type: text
+  config:
+    required: false
+  label: Github Link
+  description: GIthub repo link
+- name: categories
+  type: tag_list
+  default: []
+  label: Tags
+  description: Categories, Tools, tags
+- name: live_link
+  type: text
+  config:
+    required: false
+  label: Live Link
+  description: Live demo link/website url
+pages:
+- projects/coffee-with-me-cta.md
+- projects/nirva-shopping-store.md
