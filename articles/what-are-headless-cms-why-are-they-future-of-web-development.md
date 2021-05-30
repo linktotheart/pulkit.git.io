@@ -14,7 +14,7 @@ description: Headless CMS — a body without head
 
 The logic of traditional CMS combines the back-end and front-end parts of one system. In this case, the content turns out to be associated with specific technologies, architecture and patterns of the client-server application.
 
-Headless CMS is a fundamentally different management system. Typically, it is only responsible for generic content that can be used on all platforms. The backend *body* _with this approach is not associated with the frontend **(“head”)**.
+Headless CMS is a fundamentally different management system. Typically, it is only responsible for generic content that can be used on all platforms. The backend __**ody_** th_is approach is not associated with the frontend **(“head”)**.
 
 The logic of Headless CMS is such that different heads can be attached to the “body” if necessary. This allows you to use a single backend to manage a site (or sites) and a mobile application, as well as automate the distribution of content across all available sites and devices.
 
