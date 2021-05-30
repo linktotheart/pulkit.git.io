@@ -20,7 +20,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mx-auto d-flex mb-4 mr-lg-0 mb-lg-0 align-items-center">
           <div class="d-flex bg-secondary rounded-circle ml-md-auto ml-lg-auto mr-lg-0 ml-auto mr-auto">
-            <g-image width="360" height="360" fit="cover" quality="25" class="m-n3" alt="Pulkit" src="~/assets/img/pulkit (1).png" />
+            <g-image width="360" height="360" fit="cover" quality="45" alt="Pulkit" src="~/assets/img/pulkit (1).png" />
           </div>
         </div>
       </div>          

@@ -9,7 +9,7 @@
           <div class="col-lg-4" v-for="item in articles" :key="item.node.id">
             <div class="card card-blog border-0 mb-4 card-vertical">
               <g-link :to="item.node.path" class="card-img mb-3 d-block">
-                  <g-image :alt="item.node.title" blur="25" quality="35" width="258" class="thumbnail img-fluid" :src="item.node.thumbnail.src" />
+                  <g-image :alt="item.node.title" blur="25" width="358" class="thumbnail img-fluid" :src="item.node.thumbnail.src" />
                   <span class="sr-only">{{item.node.title}}</span>
               </g-link>
                 <g-link :to="item.node.path" class="card-title mb-3 h4 text-dark text-capitalize text-decoration-none">{{ item.node.title }}</g-link>
