@@ -1,6 +1,6 @@
 <template>
   <header class="main-header fixed-top" @scroll="handleSCroll">
-    <nav class="navbar px-md-4 px-lg-5 navbar-expand-lg">
+    <nav class="navbar px-3 px-md-4 px-lg-5 navbar-expand-lg">
       <a class="font-weight-bold d-flex text-capitalize navbar-brand" href="/">
         <svg
           version="1.1"

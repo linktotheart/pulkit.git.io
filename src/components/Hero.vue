@@ -1,8 +1,8 @@
 <template>
   <section class="hero bg-primary py-6">
     <div class="container">
-      <div class="row flex-column-reverse flex-lg-row align-items-center">
-        <div class="col-lg-8">
+      <div class="row flex-column-reverse justify-content-between flex-lg-row align-items-center">
+        <div class="col-lg-6  ">
           <div class="inner mt-4  ">
             <span class="text-muted text-center text-lg-left d-block ls-1 font-weight-bold">Hey!</span>
             <h1 class="display-4  text-center text-lg-left text-capitalize font-weight-bold" v-html="settings.hero_title" />
@@ -18,9 +18,9 @@
             <SocialLink />
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mx-auto d-flex mb-4 mb-lg-0 align-items-center">
-          <div class="d-flex bg-secondary rounded-circle ml-md-auto ml-auto mr-auto">
-            <g-image width="280" height="280" fit="cover" quality="15" class="m-n3" alt="Pulkit" src="~/assets/img/pulkit (1).png" />
+        <div class="col-lg-4 col-md-6 mx-auto d-flex mb-4 mr-lg-0 mb-lg-0 align-items-center">
+          <div class="d-flex bg-secondary rounded-circle ml-md-auto ml-lg-auto mr-lg-0 ml-auto mr-auto">
+            <g-image width="360" height="360" fit="cover" quality="25" class="m-n3" alt="Pulkit" src="~/assets/img/pulkit (1).png" />
           </div>
         </div>
       </div>          

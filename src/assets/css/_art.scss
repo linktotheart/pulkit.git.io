@@ -21,7 +21,7 @@
    }
 
    .thumbnail{
-      min-height: 15rem;
+      min-height: 10rem;
       background: #e6e6e6;
       margin: 0 -15px;
      img{
@@ -101,13 +101,13 @@
          font-size: 1.25rem;
          margin-bottom: 0;
          color: darken($accent, 45);
-
       }
    }
    
    pre,
    code {
       background-color: #f3f3f7;
+      font-family: monospace;
    }
    pre {
       padding: .5rem;
@@ -136,18 +136,20 @@
 
    & + .conclusion + .category{
       display: flex;
-
-     
    }
 
-   ul{
+   ul,ol{
       list-style: square;
+      padding-left: 1.25rem;
       li{
-         margin-bottom: 0.125rem;
+         margin-bottom: 0.75rem;
          font-size: 1.025rem;
          color: $dark;
          letter-spacing: 1px;
       }
+   }
+   ol{
+      list-style:decimal;
    }
 
 }

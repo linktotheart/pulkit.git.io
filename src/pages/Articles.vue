@@ -3,7 +3,9 @@
         <div class="page-title bg-secondary py-6">
           <div class="container mt-4">
               <h1 class="text-dark font-weight-bolder"> Articles </h1>
-              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ullam repudiandae ipsa minima quaerat error, culpa aut ex deleniti eligendi ducimus? </p>
+              <p class="lead">
+                Latest blogs, articles, news and updates. 
+              </p>
           </div>
         </div>
   
