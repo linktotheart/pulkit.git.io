@@ -8,6 +8,7 @@ module.exports = {
   siteName: "Pulkit Singh | Portfolio | Journal | Blog ",
   siteUrl: `https://ultraviolent.netlify.app`,
   host: "0.0.0.0",
+  icon: './src/favicon.png',
   titleTemplate: "%s - Pulkit Singh",
   siteDescription: "Creative Blog about Vue, JavaScript, technologies and programming in general. | Technical Blog  | Work Portfolio",
   plugins: [
@@ -92,13 +93,6 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-seo'
-    },
-    {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        publicPath: `/admin`,
-        modulePath: `src/admin/index.js`
-      }
     },
   ],
   transformers: {

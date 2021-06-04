@@ -75,3 +75,17 @@ $dark: #262525;
         background-color: darken($accent, $amount: 15);
     }
 }
+
+
+body.dark{
+    background-color: $dark;
+    color: lighten($primary, 25);
+
+    .text-dark{
+        color: #fefcff;
+    }
+
+    .bg-primary{
+        background: darken($primary, 85) !important;
+    }
+}

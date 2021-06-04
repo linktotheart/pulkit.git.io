@@ -29,6 +29,12 @@ export default {
     Header,
     Footer,
   },
+  mounted(){
+    if(localStorage.getItem("dark")) {
+      document.body.classList.add("dark")
+    }
+  }
+  
 };
 </script>
 
