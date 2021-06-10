@@ -30,9 +30,9 @@ export default {
     Footer,
   },
   mounted(){
-    if(localStorage.getItem("dark")) {
-      document.body.classList.add("dark")
-    }
+  //   if(localStorage.getItem("dark", true)) {
+  //     document.body.classList.add("dark")
+  //   }
   }
   
 };
@@ -40,11 +40,12 @@ export default {
 
 <style>
 .fade-enter-active {
-  transition: all 0.35s ease;
+  transition: all 0.25s ease;
 }
 
 .fade-enter {
-  transform: translateY(-1rem);
-  opacity: 0.95;
+  transform: translateY(-2rem);
+  opacity: 0.5;
+  filter: blur(2px);
 }
 </style>

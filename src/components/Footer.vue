@@ -53,7 +53,7 @@ export default {
   methods: {
     toggleDark() {
        document.body.classList.toggle("dark");
-       localStorage.setItem("dark", true)
+       
     }
   }
 };
