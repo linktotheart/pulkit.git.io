@@ -44,6 +44,5 @@ fields:
   label: Live Link
   description: Live demo link/website url
 pages:
-- projects/coffee-with-me-cta.md
 - projects/medioc-herbal-e-commerce-1.md
 - projects/nirva-shopping-store.md
