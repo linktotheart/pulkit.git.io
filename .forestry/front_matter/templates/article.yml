@@ -26,5 +26,6 @@ fields:
   label: Tags
 pages:
 - articles/first-look-at-gridsome-vue.js-on-steroids.md
+- articles/useaxios-react-hook-for-any-axios-call.md
 - articles/what-are-headless-cms-why-are-they-future-of-web-development.md
 - articles/what-is-jam-stack-is-jamstack-the-future-of-static-website.md
